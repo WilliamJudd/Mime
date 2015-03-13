@@ -8,8 +8,13 @@
 
 import UIKit
 
+
+
 class RegisterViewController: UIViewController {
 
+    
+        
+    
     @IBOutlet weak var usernameTextfield: UITextField!
     
     @IBOutlet weak var emailTextfield: UITextField!
@@ -27,196 +32,62 @@ class RegisterViewController: UIViewController {
         let userRepeatPassword = repeatPassword.text;
         
         if(username.isEmpty || userEmail.isEmpty || userPassword.isEmpty || userRepeatPassword.isEmpty)
-        
+
         {
-            
             displayMyAlertMessage("All fields are required")
-            
             return
-            
         }
-        
         if(userPassword != userRepeatPassword)
-        
+
         {
-            
-            displayMyAlertMessage("Passwords to not match")
-            return
-        }
-        self.register()
-    // ?????????????????????????
-    }
-        func displayMyAlertMessage(userMessage:String){
-            
-            var myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
-            
-            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
-            
-            myAlert.addAction(okAction)
-            
-            self.presentViewController(myAlert, animated: true, completion: nil)
-            
-        }
-        
-        
-        func register() {
-            
-            
-            var user = PFUser()
-            user.username = usernameTextfield.text
-            user.password = passwordTextfield.text
-            user.email = emailTextfield.text
-            
-            // other fields can be set just like with PFObject
-            
-            user.signUpInBackgroundWithBlock {
-                (succeeded: Bool!, error: NSError!) -> Void in
-                
-                if error == nil {
-                    println(user)
-                    self.usernameTextfield.text = ""
-                    self.passwordTextfield.text = ""
-                    self.emailTextfield.text = ""
-                    
-                    // Hooray! Let them use the app now.
-                    
-                } else {
-                    let errorString = error.userInfo?["error"] as NSString
-                    // Show the errorString somewhere and let the user try again.
-                
-                    var userQuery = PFUser.query()
-                    
-                                userQuery.whereKey("username", equalTo: self.usernameTextfield.text)
-                    
-                                userQuery.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in
-                    
-                                    if objects.count > 0 {
-                    
-                                        self.displayMyAlertMessage("You have already registered")
-                    
-                                    }else{
-                    
-                                        self.register()
-                                        
-                                    }
-                                    
-                                    
-                                })
-                                // check to see if email is already used (success or failure)
-                                
-                                //            signUp()
-                                
-                            }
-                            
-                        }
 
-            
-                
-                
-                
-                }
-    
-
-    
-
-
+        displayMyAlertMessage("Passwords to not match")
+        return
    
+        }else{
+   
+        var user = PFUser()
+        user.username = usernameTextfield.text
+        user.password = passwordTextfield.text
+        user.email = emailTextfield.text
     
+        
+        user.signUpInBackgroundWithBlock {
+            (succeeded: Bool!, error: NSError!) -> Void in
+            
+            if error == nil {
+                println(user)
+                self.usernameTextfield.text = ""
+                self.passwordTextfield.text = ""
+                self.emailTextfield.text = ""
+                
+                // Hooray! Let them use the app now.
+                
+            } else {
 
-
-
+                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+                MenuViewController
+                
+               self.navigationController?.pushViewController(menuVC, animated: true)
+            }
+        }
         
+    }
+}
+    
+            
+    
+    func displayMyAlertMessage(userMessage:String){
         
+        var myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
         
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
         
+        myAlert.addAction(okAction)
         
+        self.presentViewController(myAlert, animated: true, completion: nil)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        // ----------------------------------------------------------------------------------------------
-        
-        
-        
-//        var fieldValues: [String] = [ usernameTextfield.text,passwordTextfield.text, emailTextfield.text,repeatPassword.text]
-//        
-//        if find(fieldValues, "") != nil{
-//            
-//            //all fields are not filled in!
-//            
-//            var alertViewController = UIAlertController (title:"FUCK!!", message: "All fields need to be filled in.", preferredStyle: UIAlertControllerStyle.Alert)
-//            
-//            var defaultAction = UIAlertAction(title: "OK", style:.Default, handler: nil)
-//            
-//            alertViewController.addAction(defaultAction)
-//            
-//            presentViewController(alertViewController, animated: true, completion: nil)
-//            
-//        }else{
-//            
-//            //all fields are filled in!
-//            
-//            println("all fields are good and login")
-//            
-//            var userQuery = PFUser.query()
-//            
-//            userQuery.whereKey("username", equalTo: usernameTextfield.text)
-//            
-//            userQuery.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in
-//                
-//                if objects.count > 0 {
-//                    
-//                    self.login()
-//                    
-//                }else{
-//                    
-//                    self.register()
-//                    
-//                }
-//                
-//                
-//            })
-//            
-//            
-//            //            signUp()
-//            
-//        }
-//        
-//    }
-//    
-//    func login(){
-//        
-//        PFUser.logInWithUsernameInBackground(usernameTextfield.text, password:passwordTextfield.text) {
-//            (user: PFUser!, error: NSError!) -> Void in
-//            if user != nil {
-//                
-//                println("logged in as \(user)")
-//                
-//                
-//                // Do stuff after successful login.
-//            } else {
-//                // The login failed. Check error to see why.
-//            }
-//        }
-//}
-
-        
-
-//
-//
+    }
 
 
     
