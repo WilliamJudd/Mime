@@ -9,13 +9,14 @@
 import UIKit
 
 
-let array = ["Frodo", "sam", "wise", "gamgee"]
-let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
-println(array[randomIndex])
 
 
 class CharadeViewController: UIViewController {
 
+    let charadeArray = ["Jimbo", "jackie", "jenn", "bob"]
+    
+    var chArray = NSArray()
+    
     
     @IBOutlet weak var charadeLabel: UILabel!
    
@@ -30,12 +31,23 @@ class CharadeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func charadeButton(sender: AnyObject) {
+    
+    @IBAction func againButton(sender: AnyObject) {
    
-        
     
     }
 
 
-
+    
+    @IBAction func playButton(sender: AnyObject) {
+    }
+    
+    
+    @IBAction func cancelButton(sender: AnyObject) {
+   
+    dismissViewControllerAnimated(true, completion: nil)
+    
+        
+    
+    }
 }

@@ -65,10 +65,10 @@ class RegisterViewController: UIViewController {
                 
             } else {
 
-                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
-                MenuViewController
+                var homeTVC = self.storyboard?.instantiateViewControllerWithIdentifier("homeTVC") as
+                HomeTableViewController
                 
-               self.navigationController?.pushViewController(menuVC, animated: true)
+               self.navigationController?.pushViewController(homeTVC, animated: true)
             }
         }
         

@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929" y="230"/>
+            <point key="canvasLocation" x="2050" y="-538"/>
         </scene>
         <!--CameraTVC-->
         <scene sceneID="vdf-Er-Jea">
@@ -107,7 +107,34 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McO-1I-ENs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3102" y="945"/>
+            <point key="canvasLocation" x="3616" y="1644"/>
+        </scene>
+        <!--homeTVC-->
+        <scene sceneID="eVq-Ch-5bg">
+            <objects>
+                <tableViewController title="homeTVC" id="we7-Cv-EpB" customClass="HomeTableViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nym-e4-125">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MYl-tk-eyB">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MYl-tk-eyB" id="MVE-8r-9QG">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="we7-Cv-EpB" id="N04-KO-xf0"/>
+                            <outlet property="delegate" destination="we7-Cv-EpB" id="8yk-sV-IJJ"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5N-Kb-37T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1749" y="230"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="W08-6f-UWE">
@@ -128,10 +155,13 @@
                                     <constraint firstAttribute="height" constant="45" id="uaS-Eu-dNc"/>
                                 </constraints>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Categories">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="o48-XA-ZtD" kind="show" id="XF3-AR-bV2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyW-WE-SXn">
                                 <rect key="frame" x="27" y="494" width="266" height="45"/>
@@ -142,7 +172,7 @@
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XP7-ng-TMg" kind="show" id="K4q-iA-8uL"/>
+                                    <segue destination="RX3-mU-bit" kind="presentation" id="sV1-QQ-tLB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-In-V5f">
@@ -159,6 +189,18 @@
                                 <connections>
                                     <segue destination="kKd-0k-seQ" kind="presentation" id="3sf-Hb-KmX"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bi-QY-duz">
+                                <rect key="frame" x="27" y="250" width="266" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tXp-cd-cXs"/>
+                                </constraints>
+                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Guess!">
+                                    <color key="titleColor" red="0.039215687659999998" green="0.023529414089999999" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -195,39 +237,66 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ya-aT-yvG">
                                 <rect key="frame" x="16" y="184" width="288" height="74"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="LXG-Oy-59s"/>
+                                    <constraint firstAttribute="height" constant="74" id="1KM-Yv-KB2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1v-qu-RA8">
-                                <rect key="frame" x="16" y="344" width="288" height="30"/>
+                                <rect key="frame" x="16" y="381" width="288" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="L2Q-gr-fYp"/>
-                                </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Again!">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="charadeButton:" destination="Tae-g9-mm6" eventType="touchUpInside" id="eml-v1-FrQ"/>
+                                    <action selector="againButton:" destination="Tae-g9-mm6" eventType="touchUpInside" id="dK5-xM-QGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-6b-Na7">
+                                <rect key="frame" x="16" y="20" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="0UA-C6-Oy0"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="Tae-g9-mm6" eventType="touchUpInside" id="PlA-ln-ACm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGV-lX-tN9">
+                                <rect key="frame" x="16" y="419" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="Tae-g9-mm6" eventType="touchUpInside" id="l9g-o5-gWx"/>
+                                    <segue destination="XP7-ng-TMg" kind="show" id="DkU-L9-mKw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.0" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="t1v-qu-RA8" firstAttribute="top" secondItem="5Ya-aT-yvG" secondAttribute="bottom" constant="86" id="YNw-uY-duY"/>
-                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="top" secondItem="b8D-fy-fUh" secondAttribute="bottom" constant="164" id="f6j-Jk-HkB"/>
-                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="leading" secondItem="H59-Cs-Nca" secondAttribute="leadingMargin" id="kii-zf-dtv"/>
-                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="trailing" secondItem="H59-Cs-Nca" secondAttribute="trailingMargin" id="l4o-Z2-eol"/>
-                            <constraint firstItem="t1v-qu-RA8" firstAttribute="leading" secondItem="H59-Cs-Nca" secondAttribute="leadingMargin" id="odN-dt-PK1"/>
-                            <constraint firstItem="t1v-qu-RA8" firstAttribute="trailing" secondItem="H59-Cs-Nca" secondAttribute="trailingMargin" id="wP7-eC-IbB"/>
+                            <constraint firstItem="Z21-Nb-sqh" firstAttribute="top" secondItem="qGV-lX-tN9" secondAttribute="bottom" constant="119" id="2Mm-Ir-EAq"/>
+                            <constraint firstItem="t1v-qu-RA8" firstAttribute="trailing" secondItem="H59-Cs-Nca" secondAttribute="trailingMargin" id="2bk-Kl-tab"/>
+                            <constraint firstItem="a4C-6b-Na7" firstAttribute="top" secondItem="b8D-fy-fUh" secondAttribute="bottom" id="3Hv-Rb-fZi"/>
+                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="leading" secondItem="a4C-6b-Na7" secondAttribute="leading" id="7Ds-hJ-Kkx"/>
+                            <constraint firstItem="t1v-qu-RA8" firstAttribute="leading" secondItem="H59-Cs-Nca" secondAttribute="leadingMargin" id="CiC-GC-Xaa"/>
+                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="top" secondItem="H59-Cs-Nca" secondAttribute="top" constant="184" id="Gyc-Sz-mSZ"/>
+                            <constraint firstItem="t1v-qu-RA8" firstAttribute="leading" secondItem="qGV-lX-tN9" secondAttribute="leading" id="LEy-tv-P30"/>
+                            <constraint firstItem="t1v-qu-RA8" firstAttribute="trailing" secondItem="5Ya-aT-yvG" secondAttribute="trailing" id="WJD-jD-wxu"/>
+                            <constraint firstItem="t1v-qu-RA8" firstAttribute="trailing" secondItem="qGV-lX-tN9" secondAttribute="trailing" id="ccg-Ok-CtH"/>
+                            <constraint firstItem="qGV-lX-tN9" firstAttribute="top" secondItem="t1v-qu-RA8" secondAttribute="bottom" constant="8" symbolic="YES" id="kTk-AU-jyw"/>
+                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="leading" secondItem="t1v-qu-RA8" secondAttribute="leading" id="lbd-GH-f7e"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JCw-nm-sBg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="charadeLabel" destination="5Ya-aT-yvG" id="OEI-NM-74d"/>
@@ -235,45 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPk-dv-StW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2342" y="945"/>
-        </scene>
-        <!--CharadeVC-->
-        <scene sceneID="bn2-qW-XKm">
-            <objects>
-                <viewController title="CharadeVC" id="y02-LS-pkR" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1424904948590-2015-02-20 13.26.40.png" id="CEj-OY-B9I">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SQd-Ps-hg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2734" y="945"/>
-        </scene>
-        <!--T.V. Show-->
-        <scene sceneID="GLz-0q-W2j">
-            <objects>
-                <viewController title="T.V. Show" id="vHT-uj-PVu" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sLW-DO-egn"/>
-                        <viewControllerLayoutGuide type="bottom" id="610-Um-ijj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VWf-AH-Lvc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1362516468827-2013-03-05 14.44.53.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kg2-cx-sHQ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pDM-6B-bBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2376" y="1698"/>
+            <point key="canvasLocation" x="3616" y="962"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="bFQ-I6-DeF">
@@ -361,198 +392,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ez-LG-eDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3329" y="230"/>
+            <point key="canvasLocation" x="2450" y="-538"/>
         </scene>
-        <!--Movie-->
-        <scene sceneID="ndz-e0-1rI">
-            <objects>
-                <viewController title="Movie" id="gEI-H3-lco" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5yd-yA-pNq"/>
-                        <viewControllerLayoutGuide type="bottom" id="9mk-fH-08j"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WTh-tz-p5L">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1362516468827-2013-03-05 14.44.53.png" translatesAutoresizingMaskIntoConstraints="NO" id="Puw-Ws-Vlc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Al5-2s-2iQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2715" y="1698"/>
-        </scene>
-        <!--Music-->
-        <scene sceneID="wLo-9m-V62">
-            <objects>
-                <viewController title="Music" id="JXx-rs-EyO" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WbX-sh-iF1"/>
-                        <viewControllerLayoutGuide type="bottom" id="qxd-TL-6zC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fnd-qZ-ktF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1362516468827-2013-03-05 14.44.53.png" translatesAutoresizingMaskIntoConstraints="NO" id="GUU-Ib-hQ3">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eDe-2p-CD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3053" y="1698"/>
-        </scene>
-        <!--CharadeVC-->
-        <scene sceneID="LWv-PM-ew5">
-            <objects>
-                <viewController title="CharadeVC" id="YUu-CV-ZGq" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1362367588524-2013-03-03 22.18.13.png" id="jPX-ZA-cYN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yi4-So-Q7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2386" y="2951"/>
-        </scene>
-        <!--CharadeVC-->
-        <scene sceneID="u3x-EO-PCg">
-            <objects>
-                <viewController title="CharadeVC" id="0LI-BY-hpJ" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1362367588524-2013-03-03 22.18.13.png" id="Y2N-Ny-91f">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TJZ-0y-47E" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2734" y="2951"/>
-        </scene>
-        <!--T.V. Show-->
-        <scene sceneID="ifW-R5-C4r">
-            <objects>
-                <viewController title="T.V. Show" id="P4K-s5-jMG" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SFr-7e-GSd"/>
-                        <viewControllerLayoutGuide type="bottom" id="cXB-Kx-zXF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="U3N-Ve-BTr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1362516468827-2013-03-05 14.44.53.png" translatesAutoresizingMaskIntoConstraints="NO" id="smY-oB-gmj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hgJ-Ur-Zoj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2386" y="3583"/>
-        </scene>
-        <!--Music-->
-        <scene sceneID="dKJ-hZ-Erg">
-            <objects>
-                <viewController title="Music" id="sta-zb-tHk" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JxF-28-7VC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Cwe-cD-z8q"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ruc-RO-wZd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1362516468827-2013-03-05 14.44.53.png" translatesAutoresizingMaskIntoConstraints="NO" id="IN8-sJ-hUT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2on-mO-bMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3977" y="1070"/>
-        </scene>
-        <!--Music-->
-        <scene sceneID="SiB-Ps-Em3">
-            <objects>
-                <viewController title="Music" id="nao-5b-Sxu" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UBX-88-sV8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mbf-gk-uQG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="t8l-4Y-5QV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1362516468827-2013-03-05 14.44.53.png" translatesAutoresizingMaskIntoConstraints="NO" id="grH-IH-zkb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t0C-I3-Tjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4315" y="1070"/>
-        </scene>
-        <!--CharadeVC-->
-        <scene sceneID="2Tf-Ur-7Qj">
-            <objects>
-                <viewController title="CharadeVC" id="bm6-d0-LqW" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1362367588524-2013-03-03 22.18.13.png" id="Pe6-br-vNB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v9H-5z-TAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4678" y="1070"/>
-        </scene>
-        <!--Music-->
-        <scene sceneID="fTg-aZ-qPp">
-            <objects>
-                <viewController title="Music" id="pxa-4B-w09" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MxJ-vK-NPj"/>
-                        <viewControllerLayoutGuide type="bottom" id="qG8-NU-m8k"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yiZ-dZ-hzm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1362516468827-2013-03-05 14.44.53.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dru-eW-nO4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9x2-uh-86e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5021" y="1070"/>
-        </scene>
-        <!--Music-->
+        <!--Charade Menu View Controller-->
         <scene sceneID="31W-C6-ii5">
             <objects>
-                <viewController title="Music" id="dqH-AD-Ud0" sceneMemberID="viewController">
+                <viewController id="dqH-AD-Ud0" customClass="CharadeMenuViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="INi-Yu-6Oe"/>
                         <viewControllerLayoutGuide type="bottom" id="ZhP-Tv-PKH"/>
@@ -560,13 +405,61 @@
                     <view key="view" contentMode="scaleToFill" id="Ho5-0I-NpC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWa-sh-T3N">
+                                <rect key="frame" x="27" y="100" width="266" height="45"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lHi-sQ-M9a"/>
+                                </constraints>
+                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Music">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5X-5R-jhL">
+                                <rect key="frame" x="27" y="197" width="266" height="45"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aVo-kx-5MA"/>
+                                </constraints>
+                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Movies">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me6-L4-sMb">
+                                <rect key="frame" x="27" y="296" width="266" height="45"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="T.V. Show">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h5X-5R-jhL" firstAttribute="top" secondItem="uWa-sh-T3N" secondAttribute="bottom" constant="52" id="6yx-fy-VAf"/>
+                            <constraint firstItem="Me6-L4-sMb" firstAttribute="top" secondItem="h5X-5R-jhL" secondAttribute="bottom" constant="54" id="BLU-m8-uhj"/>
+                            <constraint firstItem="h5X-5R-jhL" firstAttribute="centerX" secondItem="Ho5-0I-NpC" secondAttribute="centerX" id="Cca-wl-Nma"/>
+                            <constraint firstItem="uWa-sh-T3N" firstAttribute="top" secondItem="INi-Yu-6Oe" secondAttribute="bottom" constant="80" id="Dap-B3-J9A"/>
+                            <constraint firstItem="uWa-sh-T3N" firstAttribute="leading" secondItem="Ho5-0I-NpC" secondAttribute="leadingMargin" constant="11" id="Del-TG-XqE"/>
+                            <constraint firstItem="ZhP-Tv-PKH" firstAttribute="top" secondItem="Me6-L4-sMb" secondAttribute="bottom" constant="227" id="GYB-wu-XSs"/>
+                            <constraint firstItem="h5X-5R-jhL" firstAttribute="trailing" secondItem="uWa-sh-T3N" secondAttribute="trailing" id="WKk-lS-8Dg"/>
+                            <constraint firstItem="uWa-sh-T3N" firstAttribute="leading" secondItem="h5X-5R-jhL" secondAttribute="leading" id="gpr-ep-Gu7"/>
+                            <constraint firstItem="h5X-5R-jhL" firstAttribute="leading" secondItem="Me6-L4-sMb" secondAttribute="leading" id="roI-kG-x8p"/>
+                            <constraint firstItem="Me6-L4-sMb" firstAttribute="trailing" secondItem="h5X-5R-jhL" secondAttribute="trailing" id="vqT-xa-wZO"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FSm-21-Pqj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGb-FC-XaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4331" y="1698"/>
+            <point key="canvasLocation" x="2312" y="998"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tmF-Of-z1K">
@@ -585,7 +478,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbF-ly-2Zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2521" y="230"/>
+            <point key="canvasLocation" x="1642" y="-538"/>
         </scene>
         <!--Friends View Controller-->
         <scene sceneID="tS3-Fg-1lU">
@@ -654,7 +547,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDD-HI-u7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="1064"/>
+            <point key="canvasLocation" x="1008" y="956"/>
         </scene>
         <!--Request Table View Controller-->
         <scene sceneID="rsT-Pt-t5y">
@@ -681,7 +574,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ue-PB-s82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936" y="1706"/>
+            <point key="canvasLocation" x="1008" y="1710"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pr3-Pg-s99">
@@ -699,7 +592,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErE-SJ-KSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="1070"/>
+            <point key="canvasLocation" x="628" y="962"/>
         </scene>
         <!--Edit Friends Table View Controller-->
         <scene sceneID="SHm-gM-brZ">
@@ -726,7 +619,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p41-7T-ndE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211" y="1698"/>
+            <point key="canvasLocation" x="283" y="1710"/>
         </scene>
         <!--Add Friends Table View Controller-->
         <scene sceneID="lln-Ek-6iZ">
@@ -759,7 +652,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xwo-cK-5K1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="1698"/>
+            <point key="canvasLocation" x="636" y="1710"/>
         </scene>
         <!--My Friends Table View Controller-->
         <scene sceneID="GnN-cL-SN0">
@@ -786,12 +679,371 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGe-uu-KtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="1698"/>
+            <point key="canvasLocation" x="-85" y="1710"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J7y-nT-XlG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o48-XA-ZtD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uUU-mj-F3W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dqH-AD-Ud0" kind="relationship" relationship="rootViewController" id="jf3-3t-4bv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLe-hi-oXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960" y="998"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="upN-rQ-GYc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RX3-mU-bit" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eOv-Yl-DE1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tae-g9-mm6" kind="relationship" relationship="rootViewController" id="tgl-mF-AaY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rn6-BN-mk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3230" y="962"/>
+        </scene>
+        <!--CameraTVC-->
+        <scene sceneID="Z20-Co-Xst">
+            <objects>
+                <tableViewController id="2cW-XQ-xNb" customClass="CameraTVC" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4ky-sO-8ta">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ytN-Kd-EAP">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ytN-Kd-EAP" id="1xR-ph-PP2">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2cW-XQ-xNb" id="gq0-ZY-hPe"/>
+                            <outlet property="delegate" destination="2cW-XQ-xNb" id="lem-fV-Sgx"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIj-wr-0vC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="2279"/>
+        </scene>
+        <!--CameraTVC-->
+        <scene sceneID="LDk-go-RGF">
+            <objects>
+                <tableViewController id="IgF-Za-0T7" customClass="CameraTVC" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pht-O0-boe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="EAt-Mz-sen">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EAt-Mz-sen" id="JtG-Vm-yYv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IgF-Za-0T7" id="mEy-UL-VJB"/>
+                            <outlet property="delegate" destination="IgF-Za-0T7" id="A09-Vq-dd9"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZG5-7L-1Oo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2312" y="2279"/>
+        </scene>
+        <!--CameraTVC-->
+        <scene sceneID="j9p-H6-GBd">
+            <objects>
+                <tableViewController id="pNn-HQ-cHS" customClass="CameraTVC" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9wu-ZM-lqO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2Wb-ZC-UcR">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Wb-ZC-UcR" id="q9W-zJ-iXr">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pNn-HQ-cHS" id="dE5-WG-5y8"/>
+                            <outlet property="delegate" destination="pNn-HQ-cHS" id="U3z-XQ-HWd"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRS-xW-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960" y="2279"/>
+        </scene>
+        <!--Charade View Controller-->
+        <scene sceneID="PjA-RD-rld">
+            <objects>
+                <viewController id="HHG-MP-hw0" customClass="CharadeViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVp-1g-3at"/>
+                        <viewControllerLayoutGuide type="bottom" id="t7H-TY-ePI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i92-sL-1nV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6O-oj-P9v">
+                                <rect key="frame" x="16" y="184" width="288" height="74"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="WN5-Po-5z7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvS-zX-ncQ">
+                                <rect key="frame" x="16" y="381" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Again!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="againButton:" destination="HHG-MP-hw0" eventType="touchUpInside" id="55y-Ok-nFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyo-qZ-FKq">
+                                <rect key="frame" x="16" y="20" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="cDv-vJ-jBC"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="HHG-MP-hw0" eventType="touchUpInside" id="EY9-aA-pur"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jk-Ll-uW4">
+                                <rect key="frame" x="16" y="419" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="HHG-MP-hw0" eventType="touchUpInside" id="rsZ-zr-RDN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.0" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="U6O-oj-P9v" firstAttribute="top" secondItem="i92-sL-1nV" secondAttribute="top" constant="184" id="0H0-al-pLV"/>
+                            <constraint firstItem="hvS-zX-ncQ" firstAttribute="trailing" secondItem="2Jk-Ll-uW4" secondAttribute="trailing" id="68q-KM-WNl"/>
+                            <constraint firstItem="U6O-oj-P9v" firstAttribute="leading" secondItem="hvS-zX-ncQ" secondAttribute="leading" id="C3X-hm-qAx"/>
+                            <constraint firstItem="hvS-zX-ncQ" firstAttribute="leading" secondItem="2Jk-Ll-uW4" secondAttribute="leading" id="C5c-LU-2Kc"/>
+                            <constraint firstItem="2Jk-Ll-uW4" firstAttribute="top" secondItem="hvS-zX-ncQ" secondAttribute="bottom" constant="8" symbolic="YES" id="TaM-Cj-C1i"/>
+                            <constraint firstItem="hvS-zX-ncQ" firstAttribute="trailing" secondItem="i92-sL-1nV" secondAttribute="trailingMargin" id="cdk-h6-elV"/>
+                            <constraint firstItem="hvS-zX-ncQ" firstAttribute="trailing" secondItem="U6O-oj-P9v" secondAttribute="trailing" id="cfo-31-awR"/>
+                            <constraint firstItem="t7H-TY-ePI" firstAttribute="top" secondItem="2Jk-Ll-uW4" secondAttribute="bottom" constant="119" id="dm7-cZ-QV6"/>
+                            <constraint firstItem="nyo-qZ-FKq" firstAttribute="top" secondItem="cVp-1g-3at" secondAttribute="bottom" id="gdE-aI-dFW"/>
+                            <constraint firstItem="U6O-oj-P9v" firstAttribute="leading" secondItem="nyo-qZ-FKq" secondAttribute="leading" id="lyE-it-5uT"/>
+                            <constraint firstItem="hvS-zX-ncQ" firstAttribute="leading" secondItem="i92-sL-1nV" secondAttribute="leadingMargin" id="sRY-Nw-sME"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="56S-mF-mCc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="charadeLabel" destination="U6O-oj-P9v" id="PSe-cv-hgH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEg-Tk-fyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960" y="1639"/>
+        </scene>
+        <!--Charade View Controller-->
+        <scene sceneID="Vca-H1-Ooo">
+            <objects>
+                <viewController id="aNE-HX-c9w" customClass="CharadeViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ewo-QT-zcJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7F0-kX-42X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qTs-F6-jVK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-al-3ru">
+                                <rect key="frame" x="16" y="184" width="288" height="74"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="vXG-sD-puP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbm-CO-ThN">
+                                <rect key="frame" x="16" y="381" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Again!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="againButton:" destination="aNE-HX-c9w" eventType="touchUpInside" id="gCW-xj-esC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqU-f0-bcV">
+                                <rect key="frame" x="16" y="20" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="eVC-VV-8ov"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="aNE-HX-c9w" eventType="touchUpInside" id="SbK-MD-r9d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-Sm-IBS">
+                                <rect key="frame" x="16" y="419" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="aNE-HX-c9w" eventType="touchUpInside" id="3fO-Od-ULY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.0" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iJa-al-3ru" firstAttribute="top" secondItem="qTs-F6-jVK" secondAttribute="top" constant="184" id="1ck-ph-83h"/>
+                            <constraint firstItem="iJa-al-3ru" firstAttribute="leading" secondItem="fqU-f0-bcV" secondAttribute="leading" id="8pf-zD-scm"/>
+                            <constraint firstItem="fbm-CO-ThN" firstAttribute="trailing" secondItem="qTs-F6-jVK" secondAttribute="trailingMargin" id="AHl-pA-cwl"/>
+                            <constraint firstItem="Rs5-Sm-IBS" firstAttribute="top" secondItem="fbm-CO-ThN" secondAttribute="bottom" constant="8" symbolic="YES" id="UU6-Se-fRK"/>
+                            <constraint firstItem="fqU-f0-bcV" firstAttribute="top" secondItem="Ewo-QT-zcJ" secondAttribute="bottom" id="WvN-yK-UUc"/>
+                            <constraint firstItem="7F0-kX-42X" firstAttribute="top" secondItem="Rs5-Sm-IBS" secondAttribute="bottom" constant="119" id="XEW-6B-e7k"/>
+                            <constraint firstItem="fbm-CO-ThN" firstAttribute="trailing" secondItem="iJa-al-3ru" secondAttribute="trailing" id="cL6-NJ-zP9"/>
+                            <constraint firstItem="fbm-CO-ThN" firstAttribute="trailing" secondItem="Rs5-Sm-IBS" secondAttribute="trailing" id="jyH-Gk-sY4"/>
+                            <constraint firstItem="fbm-CO-ThN" firstAttribute="leading" secondItem="qTs-F6-jVK" secondAttribute="leadingMargin" id="nrG-WX-3fQ"/>
+                            <constraint firstItem="iJa-al-3ru" firstAttribute="leading" secondItem="fbm-CO-ThN" secondAttribute="leading" id="vTj-55-hne"/>
+                            <constraint firstItem="fbm-CO-ThN" firstAttribute="leading" secondItem="Rs5-Sm-IBS" secondAttribute="leading" id="zFK-sG-kDk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="48R-rW-bXK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="charadeLabel" destination="iJa-al-3ru" id="A8c-xI-OfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QgI-B8-aUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2312" y="1644"/>
+        </scene>
+        <!--Charade View Controller-->
+        <scene sceneID="LJ4-Xa-i6R">
+            <objects>
+                <viewController id="Hre-Gx-1eS" customClass="CharadeViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oRR-zQ-JHD"/>
+                        <viewControllerLayoutGuide type="bottom" id="cHO-w6-vjH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kuz-C3-wW5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-zc-4aO">
+                                <rect key="frame" x="16" y="184" width="288" height="74"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="06b-ho-h2u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPZ-2x-iyF">
+                                <rect key="frame" x="16" y="381" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Again!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="againButton:" destination="Hre-Gx-1eS" eventType="touchUpInside" id="1pv-G5-JrB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-ii-Kow">
+                                <rect key="frame" x="16" y="20" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="8nL-wp-piw"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="Hre-Gx-1eS" eventType="touchUpInside" id="QUm-Xb-A3d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrV-UV-vW7">
+                                <rect key="frame" x="16" y="419" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="Hre-Gx-1eS" eventType="touchUpInside" id="YhR-HT-JYn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.0" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DL1-ii-Kow" firstAttribute="top" secondItem="oRR-zQ-JHD" secondAttribute="bottom" id="3fk-AX-iea"/>
+                            <constraint firstItem="LPZ-2x-iyF" firstAttribute="leading" secondItem="TrV-UV-vW7" secondAttribute="leading" id="8pP-H7-YfS"/>
+                            <constraint firstItem="zrn-zc-4aO" firstAttribute="top" secondItem="Kuz-C3-wW5" secondAttribute="top" constant="184" id="EE3-ij-D0C"/>
+                            <constraint firstItem="LPZ-2x-iyF" firstAttribute="leading" secondItem="Kuz-C3-wW5" secondAttribute="leadingMargin" id="MqT-S9-xkB"/>
+                            <constraint firstItem="LPZ-2x-iyF" firstAttribute="trailing" secondItem="Kuz-C3-wW5" secondAttribute="trailingMargin" id="PZL-I6-UIY"/>
+                            <constraint firstItem="zrn-zc-4aO" firstAttribute="leading" secondItem="LPZ-2x-iyF" secondAttribute="leading" id="SAj-49-hh5"/>
+                            <constraint firstItem="LPZ-2x-iyF" firstAttribute="trailing" secondItem="zrn-zc-4aO" secondAttribute="trailing" id="Sid-Fp-SoT"/>
+                            <constraint firstItem="TrV-UV-vW7" firstAttribute="top" secondItem="LPZ-2x-iyF" secondAttribute="bottom" constant="8" symbolic="YES" id="e2s-Qu-gcb"/>
+                            <constraint firstItem="cHO-w6-vjH" firstAttribute="top" secondItem="TrV-UV-vW7" secondAttribute="bottom" constant="119" id="glc-mK-P5M"/>
+                            <constraint firstItem="LPZ-2x-iyF" firstAttribute="trailing" secondItem="TrV-UV-vW7" secondAttribute="trailing" id="uX9-6X-0FG"/>
+                            <constraint firstItem="zrn-zc-4aO" firstAttribute="leading" secondItem="DL1-ii-Kow" secondAttribute="leading" id="wKR-6y-LS7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FHC-Rf-sHK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="charadeLabel" destination="zrn-zc-4aO" id="lTt-g9-usm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVg-jb-rt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="1644"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1362367588524-2013-03-03 22.18.13.png" width="320" height="568"/>
-        <image name="1362516468827-2013-03-05 14.44.53.png" width="320" height="568"/>
-        <image name="1424904948590-2015-02-20 13.26.40.png" width="320" height="569"/>
-    </resources>
 </document>

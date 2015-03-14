@@ -1,34 +1,15 @@
 //
-//  FriendsViewController.swift
+//  CharadeMenuViewController.swift
 //  Mime
 //
-//  Created by William Judd on 3/10/15.
+//  Created by William Judd on 3/14/15.
 //  Copyright (c) 2015 William Judd. All rights reserved.
 //
 
 import UIKit
 
-class FriendsViewController: UIViewController {
+class CharadeMenuViewController: UIViewController {
 
-   
-    @IBAction func backButton(sender: AnyObject) {
-   
-    self.dismissViewControllerAnimated(true, completion: nil)
-    
-    
-    }
-    
-    @IBAction func logoutButton(sender: AnyObject) {
-   
-        PFUser.logOut()
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
-        
-//        self.performSegueWithIdentifier("logout", sender: self)
-    
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

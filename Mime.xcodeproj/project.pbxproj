@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		3D01FD981A8FEC9D009D6E4B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */; };
 		3D01FD9A1A8FEE18009D6E4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01FD991A8FEE18009D6E4B /* LogInViewController.swift */; };
+		3D3919191AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190B1AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg */; };
+		3D39191A1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */; };
+		3D39191B1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */; };
+		3D39191C1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */; };
+		3D39191D1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */; };
+		3D39191E1AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */; };
+		3D39191F1AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919111AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg */; };
+		3D3919201AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919121AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg */; };
+		3D3919211AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919141AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg */; };
+		3D3919221AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919151AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg */; };
+		3D3919231AB35DD200A51EA2 /* mastering yourself.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919161AB35DD200A51EA2 /* mastering yourself.jpg */; };
+		3D3919241AB35DD200A51EA2 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919171AB35DD200A51EA2 /* Untitled.png */; };
+		3D3919251AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919181AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg */; };
+		3D3919271AB4D8DD00A51EA2 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3919261AB4D8DD00A51EA2 /* HomeTableViewController.swift */; };
+		3D3919291AB4F73D00A51EA2 /* CharadeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */; };
 		3D5624681AB0EF2000897D85 /* CharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5624671AB0EF2000897D85 /* CharadeViewController.swift */; };
 		3D714C201AB0C970000D8CB8 /* CameraTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D714C1F1AB0C970000D8CB8 /* CameraTVC.swift */; };
-		3DDF40BA1AAA5AAE00CEDE4F /* 1362367588524-2013-03-03 22.18.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDF40B71AAA5AAE00CEDE4F /* 1362367588524-2013-03-03 22.18.13.png */; };
-		3DDF40BB1AAA5AAE00CEDE4F /* 1424904946495-2015-02-20 13.26.54.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDF40B81AAA5AAE00CEDE4F /* 1424904946495-2015-02-20 13.26.54.png */; };
-		3DDF40BC1AAA5AAE00CEDE4F /* 1424904948590-2015-02-20 13.26.40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDF40B91AAA5AAE00CEDE4F /* 1424904948590-2015-02-20 13.26.40.png */; };
-		3DDF40BF1AAA696E00CEDE4F /* 1362516468827-2013-03-05 14.44.53.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDF40BD1AAA696E00CEDE4F /* 1362516468827-2013-03-05 14.44.53.png */; };
-		3DDF40C01AAA696E00CEDE4F /* 1409073312115-2014-08-19 15.55.07.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDF40BE1AAA696E00CEDE4F /* 1409073312115-2014-08-19 15.55.07.png */; };
 		3DE89AA21A7A9447001A55D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE89AA11A7A9447001A55D3 /* AppDelegate.swift */; };
 		3DE89AA41A7A9447001A55D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE89AA31A7A9447001A55D3 /* ViewController.swift */; };
 		3DE89AA71A7A9447001A55D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE89AA51A7A9447001A55D3 /* Main.storyboard */; };
@@ -60,13 +70,23 @@
 /* Begin PBXFileReference section */
 		3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3D01FD991A8FEE18009D6E4B /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3D39190B1AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11025140_1392277744420197_4950722601417742082_n.jpg; sourceTree = "<group>"; };
+		3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1362367588524-2013-03-03 22.18.13.png"; sourceTree = "<group>"; };
+		3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1362516468827-2013-03-05 14.44.53.png"; sourceTree = "<group>"; };
+		3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1409073312115-2014-08-19 15.55.07.png"; sourceTree = "<group>"; };
+		3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1424904946495-2015-02-20 13.26.54.png"; sourceTree = "<group>"; };
+		3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1424904948590-2015-02-20 13.26.40.png"; sourceTree = "<group>"; };
+		3D3919111AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg; sourceTree = "<group>"; };
+		3D3919121AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "apple-mac-new-wood-background.jpg"; sourceTree = "<group>"; };
+		3D3919141AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fk-yeah-friday-41-photos-22.jpg"; sourceTree = "<group>"; };
+		3D3919151AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "inspirational-quotes-3_zps809af04c.jpg"; sourceTree = "<group>"; };
+		3D3919161AB35DD200A51EA2 /* mastering yourself.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mastering yourself.jpg"; sourceTree = "<group>"; };
+		3D3919171AB35DD200A51EA2 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
+		3D3919181AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wiltt-all-i-heres-blah-blah-blah.jpg"; sourceTree = "<group>"; };
+		3D3919261AB4D8DD00A51EA2 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeMenuViewController.swift; sourceTree = "<group>"; };
 		3D5624671AB0EF2000897D85 /* CharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeViewController.swift; sourceTree = "<group>"; };
 		3D714C1F1AB0C970000D8CB8 /* CameraTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTVC.swift; sourceTree = "<group>"; };
-		3DDF40B71AAA5AAE00CEDE4F /* 1362367588524-2013-03-03 22.18.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1362367588524-2013-03-03 22.18.13.png"; path = "../../../Desktop/Images/1362367588524-2013-03-03 22.18.13.png"; sourceTree = "<group>"; };
-		3DDF40B81AAA5AAE00CEDE4F /* 1424904946495-2015-02-20 13.26.54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1424904946495-2015-02-20 13.26.54.png"; path = "../../../Desktop/Images/1424904946495-2015-02-20 13.26.54.png"; sourceTree = "<group>"; };
-		3DDF40B91AAA5AAE00CEDE4F /* 1424904948590-2015-02-20 13.26.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1424904948590-2015-02-20 13.26.40.png"; path = "../../../Desktop/Images/1424904948590-2015-02-20 13.26.40.png"; sourceTree = "<group>"; };
-		3DDF40BD1AAA696E00CEDE4F /* 1362516468827-2013-03-05 14.44.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1362516468827-2013-03-05 14.44.53.png"; path = "../../../Desktop/Images/1362516468827-2013-03-05 14.44.53.png"; sourceTree = "<group>"; };
-		3DDF40BE1AAA696E00CEDE4F /* 1409073312115-2014-08-19 15.55.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1409073312115-2014-08-19 15.55.07.png"; path = "../../../Desktop/Images/1409073312115-2014-08-19 15.55.07.png"; sourceTree = "<group>"; };
 		3DE89A9C1A7A9447001A55D3 /* Mime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE89AA01A7A9447001A55D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE89AA11A7A9447001A55D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,25 +157,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D39190A1AB35DD200A51EA2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D39190B1AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg */,
+				3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */,
+				3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */,
+				3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */,
+				3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */,
+				3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */,
+				3D3919111AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg */,
+				3D3919121AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg */,
+				3D3919131AB35DD200A51EA2 /* JPG */,
+			);
+			name = Images;
+			path = Mime/Images;
+			sourceTree = "<group>";
+		};
+		3D3919131AB35DD200A51EA2 /* JPG */ = {
+			isa = PBXGroup;
+			children = (
+				3D3919141AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg */,
+				3D3919151AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg */,
+				3D3919161AB35DD200A51EA2 /* mastering yourself.jpg */,
+				3D3919171AB35DD200A51EA2 /* Untitled.png */,
+				3D3919181AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg */,
+			);
+			path = JPG;
+			sourceTree = "<group>";
+		};
 		3D5624691AB0EF2B00897D85 /* Charade */ = {
 			isa = PBXGroup;
 			children = (
 				3D5624671AB0EF2000897D85 /* CharadeViewController.swift */,
+				3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */,
 			);
 			name = Charade;
-			sourceTree = "<group>";
-		};
-		3DDF40B41AAA4B1D00CEDE4F /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				3DDF40B71AAA5AAE00CEDE4F /* 1362367588524-2013-03-03 22.18.13.png */,
-				3DDF40BD1AAA696E00CEDE4F /* 1362516468827-2013-03-05 14.44.53.png */,
-				3DDF40BE1AAA696E00CEDE4F /* 1409073312115-2014-08-19 15.55.07.png */,
-				3DDF40B81AAA5AAE00CEDE4F /* 1424904946495-2015-02-20 13.26.54.png */,
-				3DDF40B91AAA5AAE00CEDE4F /* 1424904948590-2015-02-20 13.26.40.png */,
-			);
-			name = Images;
-			path = Mime;
 			sourceTree = "<group>";
 		};
 		3DE89A931A7A9447001A55D3 = {
@@ -164,8 +201,8 @@
 				3DE89A9E1A7A9447001A55D3 /* Mime */,
 				3DE89AB41A7A9447001A55D3 /* MimeTests */,
 				3DE89A9D1A7A9447001A55D3 /* Products */,
-				3DDF40B41AAA4B1D00CEDE4F /* Images */,
 				3DE89AC11A7A99CF001A55D3 /* Frameworks */,
+				3D39190A1AB35DD200A51EA2 /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,13 +218,14 @@
 		3DE89A9E1A7A9447001A55D3 /* Mime */ = {
 			isa = PBXGroup;
 			children = (
+				3DE89AA51A7A9447001A55D3 /* Main.storyboard */,
 				3DE89AA11A7A9447001A55D3 /* AppDelegate.swift */,
 				3DE89AA31A7A9447001A55D3 /* ViewController.swift */,
 				3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */,
 				3D01FD991A8FEE18009D6E4B /* LogInViewController.swift */,
+				3D3919261AB4D8DD00A51EA2 /* HomeTableViewController.swift */,
 				3DF32C521AAF5EB50024899F /* MenuViewController.swift */,
 				3DF32C561AAF6A010024899F /* Friends */,
-				3DE89AA51A7A9447001A55D3 /* Main.storyboard */,
 				3DE89A9F1A7A9447001A55D3 /* Supporting Files */,
 			);
 			path = Mime;
@@ -340,14 +378,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDF40C01AAA696E00CEDE4F /* 1409073312115-2014-08-19 15.55.07.png in Resources */,
-				3DDF40BB1AAA5AAE00CEDE4F /* 1424904946495-2015-02-20 13.26.54.png in Resources */,
-				3DDF40BF1AAA696E00CEDE4F /* 1362516468827-2013-03-05 14.44.53.png in Resources */,
-				3DDF40BA1AAA5AAE00CEDE4F /* 1362367588524-2013-03-03 22.18.13.png in Resources */,
 				3DE89AA71A7A9447001A55D3 /* Main.storyboard in Resources */,
+				3D39191D1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png in Resources */,
 				3DE89AAC1A7A9447001A55D3 /* LaunchScreen.xib in Resources */,
-				3DDF40BC1AAA5AAE00CEDE4F /* 1424904948590-2015-02-20 13.26.40.png in Resources */,
+				3D3919251AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg in Resources */,
 				3DE89AA91A7A9447001A55D3 /* Images.xcassets in Resources */,
+				3D39191E1AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png in Resources */,
+				3D3919201AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg in Resources */,
+				3D3919231AB35DD200A51EA2 /* mastering yourself.jpg in Resources */,
+				3D39191F1AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg in Resources */,
+				3D3919241AB35DD200A51EA2 /* Untitled.png in Resources */,
+				3D39191A1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png in Resources */,
+				3D3919221AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg in Resources */,
+				3D3919211AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg in Resources */,
+				3D3919191AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg in Resources */,
+				3D39191C1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png in Resources */,
+				3D39191B1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,10 +415,12 @@
 				3DF32C5A1AAF6BC60024899F /* AddFriendsTableViewController.swift in Sources */,
 				3DF32C531AAF5EB50024899F /* MenuViewController.swift in Sources */,
 				3D01FD981A8FEC9D009D6E4B /* RegisterViewController.swift in Sources */,
+				3D3919271AB4D8DD00A51EA2 /* HomeTableViewController.swift in Sources */,
 				3DF32C551AAF69FC0024899F /* FriendsViewController.swift in Sources */,
 				3DE89AA41A7A9447001A55D3 /* ViewController.swift in Sources */,
 				3DE89AA21A7A9447001A55D3 /* AppDelegate.swift in Sources */,
 				3DF32C5E1AAF7F150024899F /* EditFriendsTableViewController.swift in Sources */,
+				3D3919291AB4F73D00A51EA2 /* CharadeMenuViewController.swift in Sources */,
 				3D714C201AB0C970000D8CB8 /* CameraTVC.swift in Sources */,
 				3DF32C581AAF6BA10024899F /* RequestTableViewController.swift in Sources */,
 				3DF32C5C1AAF6BD80024899F /* MyFriendsTableViewController.swift in Sources */,

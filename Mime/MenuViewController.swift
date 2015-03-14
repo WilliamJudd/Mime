@@ -20,17 +20,13 @@ class MenuViewController: UIViewController {
         
         // println(User.currentUser().token)
         
-        if PFUser.currentUser() == nil{
-            
-            var loginNC = storyboard?.instantiateViewControllerWithIdentifier("loginNC") as UINavigationController
-            
-            presentViewController(loginNC, animated: false, completion: nil)
+        
             
             
             
             
             
-        }
+        
         
         
     }
