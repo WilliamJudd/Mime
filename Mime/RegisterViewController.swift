@@ -63,12 +63,13 @@ class RegisterViewController: UIViewController {
                 
                 // Hooray! Let them use the app now.
                 
-            } else {
-
-                var homeTVC = self.storyboard?.instantiateViewControllerWithIdentifier("homeTVC") as
-                HomeTableViewController
+                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+                MenuViewController
                 
-               self.navigationController?.pushViewController(homeTVC, animated: true)
+                self.navigationController?.pushViewController(menuVC, animated: true)
+                
+            } else {
+               
             }
         }
         

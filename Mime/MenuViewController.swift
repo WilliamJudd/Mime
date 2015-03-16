@@ -14,21 +14,29 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+   println(PFUser.currentUser())
+        
+        
+        
     }
     
-    override func viewWillAppear(animated: Bool) {
-        
-        // println(User.currentUser().token)
-        
-        
+
+    
+    override func viewDidAppear(animated: Bool) {
+        if PFUser.currentUser() == nil {
+            
+            var loginVC = storyboard?.instantiateViewControllerWithIdentifier("loginVC") as LogInViewController
+            var appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+            
+            appDelegate.window?.rootViewController?.presentViewController(loginVC, animated: false, completion: { () -> Void in
+                
+            })
             
             
             
             
             
-        
-        
-        
+        }
     }
 
 
