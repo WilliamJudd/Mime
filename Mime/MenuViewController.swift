@@ -19,9 +19,7 @@ class MenuViewController: UIViewController {
         
         
     }
-    
-
-    
+   
     override func viewDidAppear(animated: Bool) {
         if PFUser.currentUser() == nil {
             
@@ -32,14 +30,18 @@ class MenuViewController: UIViewController {
                 
             })
             
-            
-            
-            
-            
         }
     }
 
+    @IBAction func guessButton(sender: AnyObject) {
+   
+    
+    
+    
+    }
 
+    
+    
     /*
     // MARK: - Navigation
 

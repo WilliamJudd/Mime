@@ -12,8 +12,21 @@ import UIKit
 
 
 class CharadeViewController: UIViewController {
+    
+    var category: [String]?
+    
+//    init(makeWithCategory:Int){
+//        
+//        self.category = makeWithCategory
+//    }
 
-    let charadeArray = ["Jimbo", "jackie", "jenn", "bob"]
+//    required init(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+
+    let randomCharadeArray = ["Elvis Presley","Kanye West","Prince","Michael Jackson","James Brown","Johnny Cash","John Crocker","Gucci Maine","Waka Flocka","Wiz Khalifa","Chris Brown","2 Chains","Drake","Chief Keif","Bob Marley","Snoop Dog","Lady Gaga","Madonna","Lil Wayne","Katy Perry","The Godfather","Men In Black","The Wolf Of Wallstreet","Space Jam","Fifty Shades of Grey","The Dark Knight","Lord of the Rings","Fight Club","Forrest Gump","Memento","Gladiator","Back to the Future","The Lion King","The Shining","Braveheart","Friday","Training Day","The Shawshank Redemption","Scarface","Warrior","Michael Jordan","Deion Sanders","Bo Jackson","Muhammad Ali","Babe Ruth","Lebron James","Tiger Woods","Mike Tyson","Roger Federer","Jackie Robinson","Wayne Gretzky","Michael Phelps","Bruce Lee","Kobe Bryant","Usain Bolt","Cristiano Ronaldo","Tom Brady","Lance Armstrong","Manny Pacquiao","O.J. Simpson"]
+    
+    
     
     var chArray = NSArray()
     
@@ -28,9 +41,13 @@ class CharadeViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        let index = arc4random_uniform(UInt32(charadeArray.count))
-        let word = charadeArray[index - 1]
-        charadeLabel.text = word
+        
+        againButton(nil)
+//        let index = arc4random_uniform(UInt32(randomCharadeArray.count))
+//        let word = randomCharadeArray[index - 1]
+//        
+//                var newString = self.category?[Int(index)]
+//        charadeLabel.text = newString
         
     }
 
@@ -40,12 +57,33 @@ class CharadeViewController: UIViewController {
     }
     
     
-    @IBAction func againButton(sender: AnyObject) {
+    @IBAction func againButton(sender: AnyObject?) {
         
-        let index = arc4random_uniform(UInt32(charadeArray.count))
-        let word2 = charadeArray[index - 1]
-        charadeLabel.text = word2
-    
+        if let category = category {
+            
+            
+            let index = Int(arc4random_uniform(UInt32(category.count)))
+            let word = category[index]
+            charadeLabel.text = word
+            
+            // switch on category and use different arrays
+
+//            switch category {
+//               
+//            case (String[musicCharadeArray]):
+//                
+//            }
+//            
+            
+        } else {
+            
+            let index = Int(arc4random_uniform(UInt32(randomCharadeArray.count)))
+            let word = randomCharadeArray[index]
+            charadeLabel.text = word
+            
+        }
+
+        
     }
 
 
