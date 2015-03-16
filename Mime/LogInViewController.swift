@@ -28,48 +28,50 @@ class LogInViewController: UIViewController {
             
             return
             
-        }
+        }else{
     
-        login()
-   
-    
-    }
-    
-    
-    
-//        // ?????????????????????????
-    
-    
-        func displayMyAlertMessage(userMessage:String){
-            
-            var myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
-            
-            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
-            
-            myAlert.addAction(okAction)
-            
-            self.presentViewController(myAlert, animated: true, completion: nil)
-            
-        }
-  
-    func login() {
-        
         PFUser.logInWithUsernameInBackground(usernameTextfield.text, password:passwordTextfield.text) {
             (user: PFUser!, error: NSError!) -> Void in
             if user != nil {
                 
                 println("logged in as \(user)")
                 
+                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+                MenuViewController
+                
+                
+                self.navigationController?.pushViewController(menuVC, animated: true)
+                
                 
                 // Do stuff after successful login.
-            } else {
-                // The login failed. Check error to see why.
             }
+                // The login failed. Check error to see why.
+            
         }
     }
+}
+    
+    
+//        // ?????????????????????????
+    
+    
+    
+  
+        
+    
 
   
-    
+    func displayMyAlertMessage(userMessage:String){
+        
+        var myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        
+        myAlert.addAction(okAction)
+        
+        self.presentViewController(myAlert, animated: true, completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

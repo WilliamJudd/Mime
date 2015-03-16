@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeTableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeTableViewController: UITableViewController {
         
 //        var tableView: UITableView?
         var messages: NSArray?
@@ -18,15 +18,12 @@ class HomeTableViewController: UITableViewController, UITableViewDelegate, UITab
            
             
             
-            messages = []
             
-            let logoutButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItemStyle.Plain, target: self, action: "signOut")
-            navigationItem.rightBarButtonItem = logoutButton
             
-            tableView = UITableView(frame: view.bounds, style: UITableViewStyle.Plain)
-            tableView?.delegate = self
-            tableView?.dataSource = self
-            view.addSubview(tableView!)
+//            tableView = UITableView(frame: view.bounds, style: UITableViewStyle.Plain)
+//            tableView?.delegate = self
+//            tableView?.dataSource = self
+//            view.addSubview(tableView!)
             
             
         }
@@ -34,10 +31,17 @@ class HomeTableViewController: UITableViewController, UITableViewDelegate, UITab
         override func viewWillAppear(animated: Bool) {
             super.viewWillAppear(animated)
             
+            
+            messages = []
+            
+            let logoutButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItemStyle.Plain, target: self, action: "signOut")
+            navigationItem.rightBarButtonItem = logoutButton
+            
             let query = PFQuery(className: "Messages")
             query.whereKey("recipientIds", equalTo: PFUser.currentUser().objectId)
             query.orderByDescending("createdAt")
             query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
+                
                 if error == nil {
                     self.messages = objects
                     self.tableView?.reloadData()
@@ -57,14 +61,23 @@ class HomeTableViewController: UITableViewController, UITableViewDelegate, UITab
         }
         
         override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            
+            
             let cellId: NSString = "cell"
+            
             var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId) as? UITableViewCell
+            
             if (cell == nil) {
                 cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellId)
             }
+            
+            
             let message = messages![indexPath.row] as PFObject
+            
             cell?.textLabel?.text = message["senderName"] as NSString
+            
             let fileType = message["fileType"] as NSString
+            
             cell?.imageView?.image = UIImage(named: fileType == "image" ? "icon_image" : "icon_video")
             return cell!
         }
