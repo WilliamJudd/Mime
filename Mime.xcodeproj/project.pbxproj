@@ -9,19 +9,11 @@
 /* Begin PBXBuildFile section */
 		3D01FD981A8FEC9D009D6E4B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */; };
 		3D01FD9A1A8FEE18009D6E4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01FD991A8FEE18009D6E4B /* LogInViewController.swift */; };
-		3D3919191AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190B1AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg */; };
 		3D39191A1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */; };
 		3D39191B1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */; };
 		3D39191C1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */; };
 		3D39191D1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */; };
 		3D39191E1AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */; };
-		3D39191F1AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919111AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg */; };
-		3D3919201AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919121AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg */; };
-		3D3919211AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919141AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg */; };
-		3D3919221AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919151AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg */; };
-		3D3919231AB35DD200A51EA2 /* mastering yourself.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919161AB35DD200A51EA2 /* mastering yourself.jpg */; };
-		3D3919241AB35DD200A51EA2 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919171AB35DD200A51EA2 /* Untitled.png */; };
-		3D3919251AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D3919181AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg */; };
 		3D3919271AB4D8DD00A51EA2 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3919261AB4D8DD00A51EA2 /* HomeTableViewController.swift */; };
 		3D3919291AB4F73D00A51EA2 /* CharadeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */; };
 		3D39192B1AB5294D00A51EA2 /* GuessCharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39192A1AB5294D00A51EA2 /* GuessCharadeViewController.swift */; };
@@ -71,19 +63,11 @@
 /* Begin PBXFileReference section */
 		3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3D01FD991A8FEE18009D6E4B /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		3D39190B1AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11025140_1392277744420197_4950722601417742082_n.jpg; sourceTree = "<group>"; };
 		3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1362367588524-2013-03-03 22.18.13.png"; sourceTree = "<group>"; };
 		3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1362516468827-2013-03-05 14.44.53.png"; sourceTree = "<group>"; };
 		3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1409073312115-2014-08-19 15.55.07.png"; sourceTree = "<group>"; };
 		3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1424904946495-2015-02-20 13.26.54.png"; sourceTree = "<group>"; };
 		3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1424904948590-2015-02-20 13.26.40.png"; sourceTree = "<group>"; };
-		3D3919111AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg; sourceTree = "<group>"; };
-		3D3919121AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "apple-mac-new-wood-background.jpg"; sourceTree = "<group>"; };
-		3D3919141AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fk-yeah-friday-41-photos-22.jpg"; sourceTree = "<group>"; };
-		3D3919151AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "inspirational-quotes-3_zps809af04c.jpg"; sourceTree = "<group>"; };
-		3D3919161AB35DD200A51EA2 /* mastering yourself.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mastering yourself.jpg"; sourceTree = "<group>"; };
-		3D3919171AB35DD200A51EA2 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
-		3D3919181AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wiltt-all-i-heres-blah-blah-blah.jpg"; sourceTree = "<group>"; };
 		3D3919261AB4D8DD00A51EA2 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeMenuViewController.swift; sourceTree = "<group>"; };
 		3D39192A1AB5294D00A51EA2 /* GuessCharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessCharadeViewController.swift; sourceTree = "<group>"; };
@@ -162,30 +146,14 @@
 		3D39190A1AB35DD200A51EA2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				3D39190B1AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg */,
 				3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */,
 				3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */,
 				3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */,
 				3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */,
 				3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */,
-				3D3919111AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg */,
-				3D3919121AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg */,
-				3D3919131AB35DD200A51EA2 /* JPG */,
 			);
 			name = Images;
 			path = Mime/Images;
-			sourceTree = "<group>";
-		};
-		3D3919131AB35DD200A51EA2 /* JPG */ = {
-			isa = PBXGroup;
-			children = (
-				3D3919141AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg */,
-				3D3919151AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg */,
-				3D3919161AB35DD200A51EA2 /* mastering yourself.jpg */,
-				3D3919171AB35DD200A51EA2 /* Untitled.png */,
-				3D3919181AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg */,
-			);
-			path = JPG;
 			sourceTree = "<group>";
 		};
 		3D5624691AB0EF2B00897D85 /* Charade */ = {
@@ -384,17 +352,9 @@
 				3DE89AA71A7A9447001A55D3 /* Main.storyboard in Resources */,
 				3D39191D1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png in Resources */,
 				3DE89AAC1A7A9447001A55D3 /* LaunchScreen.xib in Resources */,
-				3D3919251AB35DD200A51EA2 /* wiltt-all-i-heres-blah-blah-blah.jpg in Resources */,
 				3DE89AA91A7A9447001A55D3 /* Images.xcassets in Resources */,
 				3D39191E1AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png in Resources */,
-				3D3919201AB35DD200A51EA2 /* apple-mac-new-wood-background.jpg in Resources */,
-				3D3919231AB35DD200A51EA2 /* mastering yourself.jpg in Resources */,
-				3D39191F1AB35DD200A51EA2 /* a49055a8633d2f20702dfd6bfc009d9136b3c663_large.jpg in Resources */,
-				3D3919241AB35DD200A51EA2 /* Untitled.png in Resources */,
 				3D39191A1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png in Resources */,
-				3D3919221AB35DD200A51EA2 /* inspirational-quotes-3_zps809af04c.jpg in Resources */,
-				3D3919211AB35DD200A51EA2 /* fk-yeah-friday-41-photos-22.jpg in Resources */,
-				3D3919191AB35DD200A51EA2 /* 11025140_1392277744420197_4950722601417742082_n.jpg in Resources */,
 				3D39191C1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png in Resources */,
 				3D39191B1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png in Resources */,
 			);

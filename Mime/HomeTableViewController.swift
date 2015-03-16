@@ -15,6 +15,9 @@ class HomeTableViewController: UITableViewController, UITableViewDelegate, UITab
         
         override func viewDidLoad() {
             super.viewDidLoad()
+           
+            
+            
             messages = []
             
             let logoutButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItemStyle.Plain, target: self, action: "signOut")
@@ -24,6 +27,8 @@ class HomeTableViewController: UITableViewController, UITableViewDelegate, UITab
             tableView?.delegate = self
             tableView?.dataSource = self
             view.addSubview(tableView!)
+            
+            
         }
         
         override func viewWillAppear(animated: Bool) {

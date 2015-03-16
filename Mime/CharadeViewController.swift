@@ -25,6 +25,14 @@ class CharadeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let index = arc4random_uniform(UInt32(charadeArray.count))
+        let word = charadeArray[index - 1]
+        charadeLabel.text = word
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,7 +41,10 @@ class CharadeViewController: UIViewController {
     
     
     @IBAction func againButton(sender: AnyObject) {
-   
+        
+        let index = arc4random_uniform(UInt32(charadeArray.count))
+        let word2 = charadeArray[index - 1]
+        charadeLabel.text = word2
     
     }
 
