@@ -4,6 +4,39 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gungseouche.ttf">
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+            <string>JCkg</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Log In View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -14,31 +47,36 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jdk-MB-ZjG">
-                                <rect key="frame" x="16" y="129" width="343" height="30"/>
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jdk-MB-ZjG">
+                                <rect key="frame" x="16" y="250" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-ck-h4K">
-                                <rect key="frame" x="16" y="187" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-ck-h4K">
+                                <rect key="frame" x="16" y="288" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrc-PA-rit">
-                                <rect key="frame" x="103" y="289" width="169" height="30"/>
-                                <state key="normal" title="Register">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrc-PA-rit">
+                                <rect key="frame" x="160" y="518" width="160" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
+                                <state key="normal" title="REGISTER">
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Cei-sV-GhO" kind="show" id="N6u-rx-Ecv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyp-sr-cfF">
-                                <rect key="frame" x="103" y="236" width="169" height="30"/>
-                                <state key="normal" title="Login">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyp-sr-cfF">
+                                <rect key="frame" x="0.0" y="518" width="159" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
+                                <state key="normal" title="LOGIN">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -46,34 +84,25 @@
                                     <segue destination="9hZ-Ji-3ng" kind="show" id="PnW-Ba-NXo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l44-Ph-k66">
-                                <rect key="frame" x="110" y="72" width="155" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKh-eJ-9PL">
+                                <rect key="frame" x="207" y="101" width="97" height="31"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWg-nw-pCh">
+                                <rect key="frame" x="239" y="140" width="65" height="35"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="16"/>
+                                <state key="normal" title="LOGIN!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Jdk-MB-ZjG" firstAttribute="top" secondItem="l44-Ph-k66" secondAttribute="bottom" constant="36" id="1ap-nq-jVL"/>
-                            <constraint firstItem="Jdk-MB-ZjG" firstAttribute="trailing" secondItem="RrS-ck-h4K" secondAttribute="trailing" id="5xb-7r-2my"/>
-                            <constraint firstItem="pyp-sr-cfF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="87" id="BgJ-LI-ocZ"/>
-                            <constraint firstItem="vrc-PA-rit" firstAttribute="trailing" secondItem="pyp-sr-cfF" secondAttribute="trailing" id="IZE-2d-7rY"/>
-                            <constraint firstItem="pyp-sr-cfF" firstAttribute="centerX" secondItem="RrS-ck-h4K" secondAttribute="centerX" id="MW5-XG-7aX"/>
-                            <constraint firstItem="Jdk-MB-ZjG" firstAttribute="centerX" secondItem="l44-Ph-k66" secondAttribute="centerX" id="Xe2-Ia-g8f"/>
-                            <constraint firstItem="l44-Ph-k66" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="94" id="XkW-IJ-JUz"/>
-                            <constraint firstItem="vrc-PA-rit" firstAttribute="top" secondItem="pyp-sr-cfF" secondAttribute="bottom" constant="23" id="a02-9h-E3S"/>
-                            <constraint firstItem="RrS-ck-h4K" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="btN-Dr-c4I"/>
-                            <constraint firstItem="pyp-sr-cfF" firstAttribute="top" secondItem="RrS-ck-h4K" secondAttribute="bottom" constant="19" id="dr8-YB-3CW"/>
-                            <constraint firstItem="Jdk-MB-ZjG" firstAttribute="leading" secondItem="RrS-ck-h4K" secondAttribute="leading" id="mXa-Ps-DnG"/>
-                            <constraint firstItem="pyp-sr-cfF" firstAttribute="leading" secondItem="vrc-PA-rit" secondAttribute="leading" id="nbO-QJ-fDd"/>
-                            <constraint firstItem="RrS-ck-h4K" firstAttribute="top" secondItem="Jdk-MB-ZjG" secondAttribute="bottom" constant="28" id="nza-jm-liG"/>
-                            <constraint firstItem="Jdk-MB-ZjG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="txA-UO-aBW"/>
-                            <constraint firstItem="l44-Ph-k66" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="v3Y-GQ-aYy"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="xEN-4C-zDh"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="passwordTextfield" destination="RrS-ck-h4K" id="juu-s0-lKv"/>
                         <outlet property="usernameTextfield" destination="Jdk-MB-ZjG" id="N69-4n-i2I"/>
@@ -173,84 +202,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4N-3B-cBg">
-                                <rect key="frame" x="27" y="441" width="266" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4N-3B-cBg">
+                                <rect key="frame" x="0.0" y="425" width="244" height="64"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="uaS-Eu-dNc"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Categories">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                                <state key="normal" title="CATEGORIES">
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="o48-XA-ZtD" kind="show" id="XF3-AR-bV2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyW-WE-SXn">
-                                <rect key="frame" x="27" y="494" width="266" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.06479849268" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyW-WE-SXn">
+                                <rect key="frame" x="0.0" y="497" width="304" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Random Charade">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="RANDOM CHARADE">
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="RX3-mU-bit" kind="presentation" id="sV1-QQ-tLB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-In-V5f">
-                                <rect key="frame" x="27" y="388" width="266" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bi-QY-duz">
+                                <rect key="frame" x="0.0" y="353" width="174" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="EY9-BN-tcm"/>
-                                </constraints>
-                                <color key="tintColor" red="0.49575585509833603" green="0.5" blue="0.26513447975126231" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Friends">
-                                    <color key="titleColor" red="0.039215687659999998" green="0.023529414089999999" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kKd-0k-seQ" kind="presentation" id="3sf-Hb-KmX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bi-QY-duz">
-                                <rect key="frame" x="27" y="250" width="266" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="tXp-cd-cXs"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Guess!">
-                                    <color key="titleColor" red="0.039215687659999998" green="0.023529414089999999" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="FRIENDS">
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="guessButton:" destination="9hZ-Ji-3ng" eventType="touchUpInside" id="Ehv-Ip-iHK"/>
-                                    <segue destination="we7-Cv-EpB" kind="show" id="Ezo-fg-V5T"/>
+                                    <segue destination="ndf-gh-a1s" kind="show" id="WUb-Rm-Nwb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pii-5e-WgU">
+                                <rect key="frame" x="207" y="116" width="97" height="31"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-MK-Pgv">
+                                <rect key="frame" x="239" y="155" width="65" height="35"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="18"/>
+                                <state key="normal" title="GUESS!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="we7-Cv-EpB" kind="show" id="uk4-pw-OKX"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="gyW-WE-SXn" firstAttribute="top" secondItem="e4N-3B-cBg" secondAttribute="bottom" constant="8" symbolic="YES" id="3AY-6M-Mww"/>
-                            <constraint firstItem="ChL-In-V5f" firstAttribute="leading" secondItem="TQ6-jt-hTX" secondAttribute="leadingMargin" constant="11" id="G5w-W0-XHM"/>
-                            <constraint firstItem="e4N-3B-cBg" firstAttribute="trailing" secondItem="gyW-WE-SXn" secondAttribute="trailing" id="JUG-bP-yjl"/>
-                            <constraint firstItem="e4N-3B-cBg" firstAttribute="leading" secondItem="gyW-WE-SXn" secondAttribute="leading" id="PdG-qI-jVT"/>
-                            <constraint firstItem="F74-6E-w5Z" firstAttribute="top" secondItem="gyW-WE-SXn" secondAttribute="bottom" constant="29" id="WOH-jk-xgh"/>
-                            <constraint firstItem="ChL-In-V5f" firstAttribute="leading" secondItem="e4N-3B-cBg" secondAttribute="leading" id="XxB-SZ-tms"/>
-                            <constraint firstItem="ChL-In-V5f" firstAttribute="top" secondItem="Chy-uj-hAt" secondAttribute="bottom" constant="368" id="dhO-bI-84Y"/>
-                            <constraint firstItem="e4N-3B-cBg" firstAttribute="centerX" secondItem="TQ6-jt-hTX" secondAttribute="centerX" id="n9L-2V-3DI"/>
-                            <constraint firstItem="e4N-3B-cBg" firstAttribute="trailing" secondItem="ChL-In-V5f" secondAttribute="trailing" id="qW4-K2-Ck1"/>
-                            <constraint firstItem="e4N-3B-cBg" firstAttribute="top" secondItem="ChL-In-V5f" secondAttribute="bottom" constant="8" symbolic="YES" id="zed-g0-LE0"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.24313725489999999" green="0.45882352939999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cxy-Rp-4Mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1319" y="974"/>
+            <point key="canvasLocation" x="1111" y="1056"/>
         </scene>
         <!--Charade View Controller-->
         <scene sceneID="3rT-ZS-aqj">
@@ -264,17 +282,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ya-aT-yvG">
-                                <rect key="frame" x="16" y="184" width="288" height="144"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sdfasf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ya-aT-yvG">
+                                <rect key="frame" x="16" y="212" width="288" height="144"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="EUu-LY-SAb"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-6b-Na7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4C-6b-Na7">
                                 <rect key="frame" x="16" y="20" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="0UA-C6-Oy0"/>
@@ -286,13 +301,13 @@
                                     <action selector="cancelButton:" destination="Tae-g9-mm6" eventType="touchUpInside" id="PlA-ln-ACm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGV-lX-tN9">
-                                <rect key="frame" x="16" y="491" width="288" height="57"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="b06-c5-vLu"/>
-                                </constraints>
-                                <state key="normal" title="Play">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGV-lX-tN9">
+                                <rect key="frame" x="161" y="484" width="159" height="84"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <state key="normal" image="camera">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -301,13 +316,10 @@
                                     <segue destination="XP7-ng-TMg" kind="show" id="DkU-L9-mKw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1v-qu-RA8">
-                                <rect key="frame" x="16" y="419" width="288" height="57"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="Prb-yb-YeP"/>
-                                </constraints>
-                                <state key="normal" title="Again!">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1v-qu-RA8">
+                                <rect key="frame" x="0.0" y="484" width="159" height="84"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="shuffle">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -315,20 +327,24 @@
                                     <action selector="againButton:" destination="Tae-g9-mm6" eventType="touchUpInside" id="dK5-xM-QGB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGx-Zd-5qq">
+                                <rect key="frame" x="207" y="126" width="97" height="31"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIO-ep-XLW">
+                                <rect key="frame" x="235" y="159" width="69" height="36"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="16"/>
+                                <state key="normal" title="RANDOM!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.46274509803921571" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="a4C-6b-Na7" firstAttribute="top" secondItem="b8D-fy-fUh" secondAttribute="bottom" id="3Hv-Rb-fZi"/>
-                            <constraint firstItem="qGV-lX-tN9" firstAttribute="leading" secondItem="H59-Cs-Nca" secondAttribute="leadingMargin" id="5pZ-Iv-EVd"/>
-                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="leading" secondItem="t1v-qu-RA8" secondAttribute="leading" id="9OK-A5-3xd"/>
-                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="top" secondItem="b8D-fy-fUh" secondAttribute="bottom" constant="120" id="AiQ-qH-BW2"/>
-                            <constraint firstItem="qGV-lX-tN9" firstAttribute="leading" secondItem="t1v-qu-RA8" secondAttribute="leading" id="Atk-ft-B0u"/>
-                            <constraint firstItem="t1v-qu-RA8" firstAttribute="trailing" secondItem="qGV-lX-tN9" secondAttribute="trailing" id="MoA-IM-0iS"/>
-                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="leading" secondItem="a4C-6b-Na7" secondAttribute="leading" id="THJ-qb-YPp"/>
-                            <constraint firstItem="5Ya-aT-yvG" firstAttribute="trailing" secondItem="t1v-qu-RA8" secondAttribute="trailing" id="biV-NL-Dbe"/>
-                            <constraint firstAttribute="bottom" secondItem="qGV-lX-tN9" secondAttribute="bottom" constant="20" symbolic="YES" id="eHP-1z-Y85"/>
-                            <constraint firstItem="qGV-lX-tN9" firstAttribute="top" secondItem="t1v-qu-RA8" secondAttribute="bottom" constant="15" id="jfC-oD-ASg"/>
-                            <constraint firstItem="t1v-qu-RA8" firstAttribute="trailing" secondItem="H59-Cs-Nca" secondAttribute="trailingMargin" id="ySy-oC-jXX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JCw-nm-sBg"/>
@@ -353,24 +369,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvh-zw-kTH">
-                                <rect key="frame" x="16" y="143" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvh-zw-kTH">
+                                <rect key="frame" x="16" y="213" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yML-au-56G">
-                                <rect key="frame" x="16" y="181" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yML-au-56G">
+                                <rect key="frame" x="16" y="251" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6zX-fg-KKV">
-                                <rect key="frame" x="16" y="219" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6zX-fg-KKV">
+                                <rect key="frame" x="16" y="289" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfx-D6-zfm">
-                                <rect key="frame" x="16" y="297" width="288" height="30"/>
-                                <state key="normal" title="Register">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="REPEAT PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7aY-WO-soo">
+                                <rect key="frame" x="16" y="327" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfx-D6-zfm">
+                                <rect key="frame" x="0.0" y="494" width="320" height="74"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="21"/>
+                                <state key="normal" title="REGISTER">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -378,46 +401,25 @@
                                     <segue destination="9hZ-Ji-3ng" kind="presentation" id="6UU-Hx-THj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="repeat password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7aY-WO-soo">
-                                <rect key="frame" x="16" y="257" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlh-rn-BCH">
-                                <rect key="frame" x="85" y="79" width="150" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="gAg-pK-zXJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGu-Ld-SVg">
+                                <rect key="frame" x="207" y="101" width="97" height="31"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOn-vx-A7O">
+                                <rect key="frame" x="232" y="140" width="72" height="35"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="16"/>
+                                <state key="normal" title="REGISTER!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="6zX-fg-KKV" firstAttribute="leading" secondItem="yML-au-56G" secondAttribute="leading" id="2Fg-tg-tsu"/>
-                            <constraint firstItem="7aY-WO-soo" firstAttribute="top" secondItem="6zX-fg-KKV" secondAttribute="bottom" constant="8" symbolic="YES" id="3A9-yS-7cc"/>
-                            <constraint firstItem="Rlh-rn-BCH" firstAttribute="leading" secondItem="yxB-fN-i1g" secondAttribute="leadingMargin" constant="69" id="5cw-XT-1rn"/>
-                            <constraint firstItem="Tfx-D6-zfm" firstAttribute="trailing" secondItem="yxB-fN-i1g" secondAttribute="trailingMargin" id="83v-tk-fb6"/>
-                            <constraint firstItem="pvh-zw-kTH" firstAttribute="leading" secondItem="yxB-fN-i1g" secondAttribute="leadingMargin" id="Ccf-nQ-1He"/>
-                            <constraint firstItem="yML-au-56G" firstAttribute="leading" secondItem="pvh-zw-kTH" secondAttribute="leading" id="CnE-Ov-8am"/>
-                            <constraint firstItem="yML-au-56G" firstAttribute="top" secondItem="pvh-zw-kTH" secondAttribute="bottom" constant="8" symbolic="YES" id="E6U-7F-520"/>
-                            <constraint firstItem="Tfx-D6-zfm" firstAttribute="top" secondItem="7aY-WO-soo" secondAttribute="bottom" constant="10" id="Hnn-Lu-pbZ"/>
-                            <constraint firstItem="7aY-WO-soo" firstAttribute="leading" secondItem="6zX-fg-KKV" secondAttribute="leading" id="JJo-Y5-NMv"/>
-                            <constraint firstItem="pvh-zw-kTH" firstAttribute="centerX" secondItem="Rlh-rn-BCH" secondAttribute="centerX" id="RTE-Q4-EgZ"/>
-                            <constraint firstItem="pvh-zw-kTH" firstAttribute="trailing" secondItem="yML-au-56G" secondAttribute="trailing" id="SU4-nT-pil"/>
-                            <constraint firstItem="Tfx-D6-zfm" firstAttribute="trailing" secondItem="7aY-WO-soo" secondAttribute="trailing" id="UPi-ds-pxF"/>
-                            <constraint firstItem="7aY-WO-soo" firstAttribute="trailing" secondItem="6zX-fg-KKV" secondAttribute="trailing" id="XFF-i0-HEC"/>
-                            <constraint firstItem="Rlh-rn-BCH" firstAttribute="top" secondItem="TxR-TS-UMu" secondAttribute="bottom" constant="15" id="bYV-hj-dqA"/>
-                            <constraint firstItem="6zX-fg-KKV" firstAttribute="top" secondItem="yML-au-56G" secondAttribute="bottom" constant="8" symbolic="YES" id="fdm-Le-nnQ"/>
-                            <constraint firstItem="6zX-fg-KKV" firstAttribute="trailing" secondItem="yML-au-56G" secondAttribute="trailing" id="hAM-t2-e4j"/>
-                            <constraint firstItem="7aY-WO-soo" firstAttribute="leading" secondItem="Tfx-D6-zfm" secondAttribute="leading" id="mfx-qH-Hli"/>
-                            <constraint firstItem="pvh-zw-kTH" firstAttribute="top" secondItem="Rlh-rn-BCH" secondAttribute="bottom" constant="38" id="rMq-Vp-zG3"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="599-b8-mB5"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="emailTextfield" destination="yML-au-56G" id="x3D-id-6xT"/>
@@ -442,62 +444,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWa-sh-T3N">
-                                <rect key="frame" x="27" y="100" width="266" height="45"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="lHi-sQ-M9a"/>
-                                </constraints>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Music">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="musicClicked:" destination="dqH-AD-Ud0" eventType="touchUpInside" id="tiP-aj-dtY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5X-5R-jhL">
-                                <rect key="frame" x="27" y="197" width="266" height="45"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="aVo-kx-5MA"/>
-                                </constraints>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Movies">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="moviesClicked:" destination="dqH-AD-Ud0" eventType="touchUpInside" id="JLn-zM-gdE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me6-L4-sMb">
-                                <rect key="frame" x="27" y="296" width="266" height="45"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sports">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="sportsClicked:" destination="dqH-AD-Ud0" eventType="touchUpInside" id="VGf-Hi-gB6"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="michael_jordan.png" translatesAutoresizingMaskIntoConstraints="NO" id="wpq-A6-inN">
+                                <rect key="frame" x="0.0" y="70" width="320" height="157"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Leodicaprio.png" translatesAutoresizingMaskIntoConstraints="NO" id="fV8-Oa-CFv">
+                                <rect key="frame" x="0.0" y="233" width="320" height="157"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="katy_perry_roar.png" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-2P-W7Z">
+                                <rect key="frame" x="0.0" y="394" width="320" height="166"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="h5X-5R-jhL" firstAttribute="top" secondItem="uWa-sh-T3N" secondAttribute="bottom" constant="52" id="6yx-fy-VAf"/>
-                            <constraint firstItem="Me6-L4-sMb" firstAttribute="top" secondItem="h5X-5R-jhL" secondAttribute="bottom" constant="54" id="BLU-m8-uhj"/>
-                            <constraint firstItem="h5X-5R-jhL" firstAttribute="centerX" secondItem="Ho5-0I-NpC" secondAttribute="centerX" id="Cca-wl-Nma"/>
-                            <constraint firstItem="uWa-sh-T3N" firstAttribute="top" secondItem="INi-Yu-6Oe" secondAttribute="bottom" constant="80" id="Dap-B3-J9A"/>
-                            <constraint firstItem="uWa-sh-T3N" firstAttribute="leading" secondItem="Ho5-0I-NpC" secondAttribute="leadingMargin" constant="11" id="Del-TG-XqE"/>
-                            <constraint firstItem="ZhP-Tv-PKH" firstAttribute="top" secondItem="Me6-L4-sMb" secondAttribute="bottom" constant="227" id="GYB-wu-XSs"/>
-                            <constraint firstItem="h5X-5R-jhL" firstAttribute="trailing" secondItem="uWa-sh-T3N" secondAttribute="trailing" id="WKk-lS-8Dg"/>
-                            <constraint firstItem="uWa-sh-T3N" firstAttribute="leading" secondItem="h5X-5R-jhL" secondAttribute="leading" id="gpr-ep-Gu7"/>
-                            <constraint firstItem="h5X-5R-jhL" firstAttribute="leading" secondItem="Me6-L4-sMb" secondAttribute="leading" id="roI-kG-x8p"/>
-                            <constraint firstItem="Me6-L4-sMb" firstAttribute="trailing" secondItem="h5X-5R-jhL" secondAttribute="trailing" id="vqT-xa-wZO"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="FSm-21-Pqj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -537,44 +494,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mj3-5U-aGb">
-                                <rect key="frame" x="27" y="90" width="266" height="125"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Friend Request">
-                                    <color key="titleColor" red="0.039215687659999998" green="0.023529414089999999" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="v9A-lg-4WC" kind="show" id="V2g-MS-t4Y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XQ-zD-rbS">
-                                <rect key="frame" x="27" y="423" width="266" height="125"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.06479849268" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="My Friends">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PVk-6H-I7y" kind="show" id="aHy-U0-6eG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXU-do-qWd">
-                                <rect key="frame" x="27" y="257" width="266" height="125"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-Ut-YFA">
+                                <rect key="frame" x="0.0" y="424" width="244" height="64"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add Friends">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="66" maxY="0.0"/>
+                                <state key="normal" title="REQUEST">
+                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="U9a-gU-SxV" kind="show" id="ZhD-j5-hiu"/>
+                                    <segue destination="v9A-lg-4WC" kind="show" id="cyu-QK-quz"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa9-VL-loc">
+                                <rect key="frame" x="0.0" y="496" width="304" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
+                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="82" maxY="0.0"/>
+                                <state key="normal" title="MY FRIENDS">
+                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PVk-6H-I7y" kind="show" id="zdW-i0-pwy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-9s-aUS">
+                                <rect key="frame" x="0.0" y="352" width="174" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
+                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="9" maxY="0.0"/>
+                                <state key="normal" title="SEARCH">
+                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButton:" destination="9hZ-Ji-3ng" eventType="touchUpInside" id="AIh-E7-2st"/>
+                                    <segue destination="U9a-gU-SxV" kind="show" id="cds-lY-q1b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEO-wQ-cnp">
+                                <rect key="frame" x="207" y="112" width="97" height="31"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awN-Zu-CnU">
+                                <rect key="frame" x="239" y="151" width="65" height="35"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="18"/>
+                                <state key="normal" title="GUESS!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.054901960780000002" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="TJX-9V-cRQ">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="kcL-9Q-n3G">
@@ -592,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDD-HI-u7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="358" y="1796"/>
+            <point key="canvasLocation" x="478" y="1786"/>
         </scene>
         <!--Request Table View Controller-->
         <scene sceneID="rsT-Pt-t5y">
@@ -626,6 +604,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kKd-0k-seQ" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1D9-Mx-Sh9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -637,7 +616,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErE-SJ-KSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="1802"/>
+            <point key="canvasLocation" x="59" y="1786"/>
         </scene>
         <!--Edit Friends Table View Controller-->
         <scene sceneID="SHm-gM-brZ">
@@ -781,9 +760,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Z1z-Iv-w8m"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="22"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="C">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -792,10 +772,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6Z-F8-C3D">
                                 <rect key="frame" x="27" y="494" width="266" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.06479849268" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="22"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="D">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -808,9 +789,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9o5-8T-cLn"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="22"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="B">
-                                    <color key="titleColor" red="0.039215687659999998" green="0.023529414089999999" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -820,17 +802,32 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-v4-Lhw">
                                 <rect key="frame" x="27" y="335" width="266" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="22"/>
                                 <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="A">
-                                    <color key="titleColor" red="0.039215687659999998" green="0.023529414089999999" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonAClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="XFZ-tf-3tc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH8-lp-qO2">
+                                <rect key="frame" x="207" y="101" width="97" height="31"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF3-iL-WZO">
+                                <rect key="frame" x="243" y="134" width="61" height="36"/>
+                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="16"/>
+                                <state key="normal" title="GUESS!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.054901960780000002" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c6Z-F8-C3D" firstAttribute="top" secondItem="IoS-uH-zY6" secondAttribute="bottom" constant="8" symbolic="YES" id="DAd-nT-fDi"/>
                             <constraint firstItem="jZR-sf-p20" firstAttribute="top" secondItem="hEh-v4-Lhw" secondAttribute="bottom" constant="8" symbolic="YES" id="Ejr-Pl-cRw"/>
@@ -858,10 +855,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7I-aO-22W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2627" y="626"/>
+            <point key="canvasLocation" x="2709" y="626"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Leodicaprio.png" width="376" height="225"/>
+        <image name="camera" width="27" height="34"/>
+        <image name="katy_perry_roar.png" width="376" height="223"/>
+        <image name="michael_jordan.png" width="376" height="223"/>
+        <image name="shuffle" width="33" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PnW-Ba-NXo"/>
+        <segue reference="6UU-Hx-THj"/>
+        <segue reference="WUb-Rm-Nwb"/>
     </inferredMetricsTieBreakers>
 </document>
