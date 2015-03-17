@@ -10,6 +10,12 @@ import UIKit
 
 class GuessCharadeViewController: UIViewController {
 
+    @IBOutlet weak var buttonA: UIButton!
+    @IBOutlet weak var buttonB: UIButton!
+    @IBOutlet weak var buttonC: UIButton!
+    @IBOutlet weak var buttonD: UIButton!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +27,24 @@ class GuessCharadeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  
+    @IBAction func buttonAClicked(sender: AnyObject) {
+    
     }
-    */
+
+    
+    @IBAction func buttonBClicked(sender: AnyObject) {
+    
+    }
+    
+    
+    @IBAction func buttonCClicked(sender: AnyObject) {
+    
+    }
+    
+    
+    @IBAction func buttonDClicked(sender: AnyObject) {
+    
+    }
 
 }
