@@ -18,6 +18,7 @@
 		3D3919291AB4F73D00A51EA2 /* CharadeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */; };
 		3D39192B1AB5294D00A51EA2 /* GuessCharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39192A1AB5294D00A51EA2 /* GuessCharadeViewController.swift */; };
 		3D5624681AB0EF2000897D85 /* CharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5624671AB0EF2000897D85 /* CharadeViewController.swift */; };
+		3D5EA5F01AB7C16400A069E8 /* CharadeVC.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EA5EF1AB7C16400A069E8 /* CharadeVC.png */; };
 		3D714C201AB0C970000D8CB8 /* CameraTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D714C1F1AB0C970000D8CB8 /* CameraTVC.swift */; };
 		3DE89AA21A7A9447001A55D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE89AA11A7A9447001A55D3 /* AppDelegate.swift */; };
 		3DE89AA41A7A9447001A55D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE89AA31A7A9447001A55D3 /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeMenuViewController.swift; sourceTree = "<group>"; };
 		3D39192A1AB5294D00A51EA2 /* GuessCharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessCharadeViewController.swift; sourceTree = "<group>"; };
 		3D5624671AB0EF2000897D85 /* CharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeViewController.swift; sourceTree = "<group>"; };
+		3D5EA5EF1AB7C16400A069E8 /* CharadeVC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharadeVC.png; sourceTree = "<group>"; };
 		3D714C1F1AB0C970000D8CB8 /* CameraTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTVC.swift; sourceTree = "<group>"; };
 		3DE89A9C1A7A9447001A55D3 /* Mime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE89AA01A7A9447001A55D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */,
 				3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */,
 				3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */,
+				3D5EA5EF1AB7C16400A069E8 /* CharadeVC.png */,
 			);
 			name = Images;
 			path = Mime/Images;
@@ -355,6 +358,7 @@
 				3DE89AA91A7A9447001A55D3 /* Images.xcassets in Resources */,
 				3D39191E1AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png in Resources */,
 				3D39191A1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png in Resources */,
+				3D5EA5F01AB7C16400A069E8 /* CharadeVC.png in Resources */,
 				3D39191C1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png in Resources */,
 				3D39191B1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png in Resources */,
 			);
