@@ -10,6 +10,8 @@ import UIKit
 
 class GuessCharadeViewController: UIViewController {
 
+    @IBOutlet weak var questionLabel: UILabel!
+    
     @IBOutlet weak var buttonA: UIButton!
     @IBOutlet weak var buttonB: UIButton!
     @IBOutlet weak var buttonC: UIButton!
@@ -27,6 +29,40 @@ class GuessCharadeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+//    func randomQuestion(){
+//        
+////        var randomNumber = arc4random_uniform() % 4
+//        randomNumber += 1
+//        
+//        switch(randomNumber){
+//            
+//        case 1:
+//            
+//            questionLabel.text = "What is the Charade"
+//            buttonA.setTitle("Charade 1", forState: UIControlState.normal)
+//            
+//            break
+//        case 2:
+//            
+//            break
+//            
+//        case 3:
+//            
+//            break
+//            
+//        case 4:
+//            
+//            break
+//            
+//        default:
+//            
+//            break
+//            
+//            
+//        }
+//        
+//    }
   
     @IBAction func buttonAClicked(sender: AnyObject) {
     

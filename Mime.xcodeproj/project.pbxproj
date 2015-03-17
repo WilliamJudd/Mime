@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3D01FD981A8FEC9D009D6E4B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */; };
 		3D01FD9A1A8FEE18009D6E4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01FD991A8FEE18009D6E4B /* LogInViewController.swift */; };
+		3D0D20361AB89CA7007EEBD4 /* Gungseouche.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D20351AB89B11007EEBD4 /* Gungseouche.ttf */; };
+		3D0D20391AB8B05C007EEBD4 /* Leodicaprio.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D20371AB8B05C007EEBD4 /* Leodicaprio.png */; };
+		3D0D203A1AB8B05C007EEBD4 /* michael_jordan.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D20381AB8B05C007EEBD4 /* michael_jordan.png */; };
+		3D0D203C1AB8B1F8007EEBD4 /* katy_perry_roar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D203B1AB8B1F8007EEBD4 /* katy_perry_roar.png */; };
 		3D39191A1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */; };
 		3D39191B1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */; };
 		3D39191C1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */; };
@@ -64,6 +68,10 @@
 /* Begin PBXFileReference section */
 		3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3D01FD991A8FEE18009D6E4B /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3D0D20351AB89B11007EEBD4 /* Gungseouche.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Gungseouche.ttf; path = Images/Gungseouche.ttf; sourceTree = "<group>"; };
+		3D0D20371AB8B05C007EEBD4 /* Leodicaprio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leodicaprio.png; sourceTree = "<group>"; };
+		3D0D20381AB8B05C007EEBD4 /* michael_jordan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = michael_jordan.png; sourceTree = "<group>"; };
+		3D0D203B1AB8B1F8007EEBD4 /* katy_perry_roar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katy_perry_roar.png; sourceTree = "<group>"; };
 		3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1362367588524-2013-03-03 22.18.13.png"; sourceTree = "<group>"; };
 		3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1362516468827-2013-03-05 14.44.53.png"; sourceTree = "<group>"; };
 		3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1409073312115-2014-08-19 15.55.07.png"; sourceTree = "<group>"; };
@@ -149,7 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */,
+				3D0D203B1AB8B1F8007EEBD4 /* katy_perry_roar.png */,
 				3D39190D1AB35DD200A51EA2 /* 1362516468827-2013-03-05 14.44.53.png */,
+				3D0D20371AB8B05C007EEBD4 /* Leodicaprio.png */,
+				3D0D20381AB8B05C007EEBD4 /* michael_jordan.png */,
 				3D39190E1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png */,
 				3D39190F1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png */,
 				3D3919101AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png */,
@@ -211,6 +222,7 @@
 				3DE89AA81A7A9447001A55D3 /* Images.xcassets */,
 				3DE89AAA1A7A9447001A55D3 /* LaunchScreen.xib */,
 				3DE89AA01A7A9447001A55D3 /* Info.plist */,
+				3D0D20351AB89B11007EEBD4 /* Gungseouche.ttf */,
 				3DE89AE21A7A9B35001A55D3 /* Mime-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
@@ -352,11 +364,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0D20361AB89CA7007EEBD4 /* Gungseouche.ttf in Resources */,
 				3DE89AA71A7A9447001A55D3 /* Main.storyboard in Resources */,
 				3D39191D1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png in Resources */,
 				3DE89AAC1A7A9447001A55D3 /* LaunchScreen.xib in Resources */,
+				3D0D203C1AB8B1F8007EEBD4 /* katy_perry_roar.png in Resources */,
 				3DE89AA91A7A9447001A55D3 /* Images.xcassets in Resources */,
+				3D0D203A1AB8B05C007EEBD4 /* michael_jordan.png in Resources */,
 				3D39191E1AB35DD200A51EA2 /* 1424904948590-2015-02-20 13.26.40.png in Resources */,
+				3D0D20391AB8B05C007EEBD4 /* Leodicaprio.png in Resources */,
 				3D39191A1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png in Resources */,
 				3D5EA5F01AB7C16400A069E8 /* CharadeVC.png in Resources */,
 				3D39191C1AB35DD200A51EA2 /* 1409073312115-2014-08-19 15.55.07.png in Resources */,
