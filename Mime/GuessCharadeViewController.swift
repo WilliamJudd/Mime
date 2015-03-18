@@ -17,7 +17,13 @@ class GuessCharadeViewController: UIViewController {
     @IBOutlet weak var buttonC: UIButton!
     @IBOutlet weak var buttonD: UIButton!
 
+    @IBOutlet weak var resultLabel: UILabel!
 
+    var questionNumber: UInt32!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

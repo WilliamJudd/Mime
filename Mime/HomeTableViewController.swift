@@ -10,14 +10,17 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
         
-//        var tableView: UITableView?
         var messages: NSArray?
-        
+        var selectedMessage: PFObject?
+    
+    
+    
         override func viewDidLoad() {
             super.viewDidLoad()
            
             
-            
+         
+//            @property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
             
             
 //            tableView = UITableView(frame: view.bounds, style: UITableViewStyle.Plain)
@@ -34,8 +37,8 @@ class HomeTableViewController: UITableViewController {
             
             messages = []
             
-            let logoutButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItemStyle.Plain, target: self, action: "signOut")
-            navigationItem.rightBarButtonItem = logoutButton
+//            let logoutButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItemStyle.Plain, target: self, action: "signOut")
+//            navigationItem.rightBarButtonItem = logoutButton
             
             let query = PFQuery(className: "Messages")
             query.whereKey("recipientIds", equalTo: PFUser.currentUser().objectId)
