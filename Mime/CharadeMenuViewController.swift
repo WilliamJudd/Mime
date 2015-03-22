@@ -34,6 +34,7 @@ class CharadeMenuViewController: UIViewController {
         charadeVC.category  = musicCharadeArray
         
         
+        
         self.navigationController?.pushViewController(charadeVC, animated: true)
     
     

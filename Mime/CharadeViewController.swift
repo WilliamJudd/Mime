@@ -90,7 +90,12 @@ class CharadeViewController: UIViewController {
     
     @IBAction func playButton(sender: AnyObject) {
     
-    
+        var cameraTVC = self.storyboard?.instantiateViewControllerWithIdentifier("cameraTVC") as
+        CameraTableViewController
+        
+        cameraTVC.charade = charadeLabel.text
+        
+        presentViewController(cameraTVC, animated: true, completion: nil)
     
     }
     
