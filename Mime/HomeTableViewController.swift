@@ -10,7 +10,7 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
         
-        var messages: NSArray?
+        var charades: NSArray?
         var selectedMessage: PFObject?
     
     
@@ -35,32 +35,36 @@ class HomeTableViewController: UITableViewController {
             super.viewWillAppear(animated)
             
             
-            messages = []
+            charades = []
             
-//            let logoutButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItemStyle.Plain, target: self, action: "signOut")
-//            navigationItem.rightBarButtonItem = logoutButton
+            let logoutButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItemStyle.Plain, target: self, action: "signOut")
+            navigationItem.rightBarButtonItem = logoutButton
             
-            let query = PFQuery(className: "Messages")
+            let query = PFQuery(className: "Charades")
             query.whereKey("recipientIds", equalTo: PFUser.currentUser().objectId)
             query.orderByDescending("createdAt")
             query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
                 
                 if error == nil {
-                    self.messages = objects
+                    self.charades = objects
                     self.tableView?.reloadData()
+                    
+                    println("printing: \(self.charades)")
+                    
+
+
+                    
+                    
                 } else {
                     println(error)
                 }
             }
         }
         
-        func signOut() {
-            PFUser.logOut()
-//            view.window?.rootViewController = LoginViewController()
-        }
+       
         
         override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return messages!.count
+            return charades!.count
         }
         
         override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -75,7 +79,7 @@ class HomeTableViewController: UITableViewController {
             }
             
             
-            let message = messages![indexPath.row] as PFObject
+            let message = charades![indexPath.row] as PFObject
             
             cell?.textLabel?.text = message["senderName"] as NSString
             
@@ -83,6 +87,16 @@ class HomeTableViewController: UITableViewController {
             
             cell?.imageView?.image = UIImage(named: fileType == "image" ? "icon_image" : "icon_video")
             return cell!
+        }
+    
+    
+        override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+            var watchVC = self.storyboard?.instantiateViewControllerWithIdentifier("watchVC") as WatchCharadeViewController
+            
+            watchVC.charrade = self.charades?.objectAtIndex(indexPath.row) as PFObject?
+            
+            self.navigationController?.pushViewController(watchVC, animated:true)
         }
     }
 

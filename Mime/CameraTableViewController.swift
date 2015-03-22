@@ -9,7 +9,7 @@
 import UIKit
 import MobileCoreServices
 
-class CameraViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var friends: Array<AnyObject>?
     var recipients: NSMutableArray?
@@ -18,16 +18,21 @@ class CameraViewController: UITableViewController, UIImagePickerControllerDelega
     var videoFilePath: NSString?
     var picked: Bool?
     
+    var charade: String!
+    
+    @IBOutlet weak var camBarButItem: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         friends = []
         recipients = []
         
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.Plain, target: self, action: "cancel")
-        navigationItem.leftBarButtonItem = cancelButton
+        let cancelButton = UIBarButtonItem(title: "Cancel", style:
+            UIBarButtonItemStyle.Plain, target: self, action: "cancel")
+        camBarButItem.topItem?.setLeftBarButtonItem(cancelButton, animated: true)
         
         let sendButton = UIBarButtonItem(title: "Send", style: UIBarButtonItemStyle.Plain, target: self, action: "send")
-        navigationItem.rightBarButtonItem = sendButton
+        camBarButItem.topItem?.setRightBarButtonItem(sendButton, animated: true)
         
 //        tableView = UITableView(frame: view.bounds, style: UITableViewStyle.Plain)
 //        tableView?.delegate = self
@@ -57,7 +62,7 @@ class CameraViewController: UITableViewController, UIImagePickerControllerDelega
             imagePicker?.videoMaximumDuration = 10
             imagePicker?.sourceType = UIImagePickerController.isSourceTypeAvailable(.Camera) ? .Camera : .PhotoLibrary
             imagePicker?.mediaTypes = UIImagePickerController.availableMediaTypesForSourceType(imagePicker!.sourceType)!
-            presentViewController(imagePicker!, animated: true, completion: nil)
+            presentViewController(imagePicker!, animated: false, completion: nil)
         }
     }
     
@@ -127,6 +132,7 @@ class CameraViewController: UITableViewController, UIImagePickerControllerDelega
             presentViewController(imagePicker!, animated: false, completion: nil)
         } else {
             uploadMessage()
+            presentViewController(MenuViewController(), animated: false, completion: nil)
         }
     }
     
@@ -142,6 +148,7 @@ class CameraViewController: UITableViewController, UIImagePickerControllerDelega
         var fileData: NSData?
         var fileName: NSString?
         var fileType: NSString?
+        var word: NSString?
         
         if image != nil {
             let newImage = resizeImage(image!, width: view.window!.frame.size.width, height: view.window!.frame.size.height)
@@ -157,8 +164,9 @@ class CameraViewController: UITableViewController, UIImagePickerControllerDelega
         let file = PFFile(name: fileName, data: fileData, contentType: fileType)
         file.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
             if error == nil {
-                let message = PFObject(className: "Messages")
+                let message = PFObject(className: "Charades")
                 message.setObject(file, forKey: "file")
+                message.setObject(self.charade, forKey: "word")
                 message.setObject(fileType, forKey: "fileType")
                 message.setObject(self.recipients!, forKey: "recipientIds")
                 message.setObject(PFUser.currentUser().objectId, forKey: "senderId")
@@ -185,6 +193,10 @@ class CameraViewController: UITableViewController, UIImagePickerControllerDelega
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return resizedImage
+    
+    
+    
+    
     }
 }
 
