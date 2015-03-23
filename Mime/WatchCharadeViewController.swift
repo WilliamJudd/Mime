@@ -17,23 +17,41 @@ class WatchCharadeViewController: UIViewController {
     var charrade: PFObject?
     var moviePlayer : MPMoviePlayerController!
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         println("the charrade: \(charrade)")
         
         
-        
-        
-            var charadeImage = charrade?.objectForKey("file") as PFFile
+        if var charadeImage = charrade?.objectForKey("imageFile") as? PFFile {
+            
+            
             charadeImage.getDataInBackgroundWithBlock { (imageData: NSData!, error: NSError!) -> Void in
+                
                 self.watchCharade.image = UIImage(data: imageData)
                 
+            }
+            
         }
+        
+        
+        if var charadeVideo = charrade?.objectForKey("videoFile") as? PFFile {
+            
+            
+            if let videoURL = NSURL(string: charadeVideo.url) {
+                
+                self.moviePlayer = MPMoviePlayerController(contentURL: videoURL)
+
+                self.moviePlayer.view.frame = view.frame
+                
+                view.addSubview(self.moviePlayer.view)
+                
+                self.moviePlayer.play()
+                
+            }
+            
+        }
+        
 //
 //            
 //           }
