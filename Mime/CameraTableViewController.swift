@@ -148,24 +148,29 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
         var fileData: NSData?
         var fileName: NSString?
         var fileType: NSString?
+        var fileKey: NSString?
         var word: NSString?
         
+
         if image != nil {
             let newImage = resizeImage(image!, width: view.window!.frame.size.width, height: view.window!.frame.size.height)
             fileData = UIImagePNGRepresentation(newImage)
             fileName = "image.png"
             fileType = "image"
+            fileKey = "imageFile"
+            
         } else {
             fileData = NSData.dataWithContentsOfMappedFile(videoFilePath!) as? NSData
             fileName = "video.mov"
             fileType = "video"
+            fileKey = "videoFile"
         }
         
         let file = PFFile(name: fileName, data: fileData, contentType: fileType)
         file.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
             if error == nil {
                 let message = PFObject(className: "Charades")
-                message.setObject(file, forKey: "file")
+                message.setObject(file, forKey: fileKey)
                 message.setObject(self.charade, forKey: "word")
                 message.setObject(fileType, forKey: "fileType")
                 message.setObject(self.recipients!, forKey: "recipientIds")
