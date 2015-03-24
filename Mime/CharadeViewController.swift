@@ -93,7 +93,7 @@ class CharadeViewController: UIViewController {
         var cameraTVC = self.storyboard?.instantiateViewControllerWithIdentifier("cameraTVC") as
         CameraTableViewController
         
-        cameraTVC.correctCharade = charadeLabel.text
+        cameraTVC.charade = charadeLabel.text
         
         let navController = UINavigationController(rootViewController: cameraTVC)
         
@@ -110,4 +110,12 @@ class CharadeViewController: UIViewController {
         
     
     }
+
+    @IBAction func backButton(sender: AnyObject) {
+   
+    dismissViewControllerAnimated(true, completion: nil)
+    
+    }
+
+
 }

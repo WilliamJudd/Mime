@@ -70,10 +70,18 @@ class CharadeMenuViewController: UIViewController {
         
         self.navigationController?.pushViewController(charadeVC, animated: true)
     
+        
     
     }
     
     
+    @IBAction func backButton(sender: AnyObject) {
+   
+    self.dismissViewControllerAnimated(true, completion: nil)
+    
+    
+    
+    }
     
     
     

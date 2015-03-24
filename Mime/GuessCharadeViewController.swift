@@ -13,9 +13,11 @@ class GuessCharadeViewController: UIViewController {
     let randomCharadeArray = ["Elvis Presley","Kanye West","Prince","Michael Jackson","James Brown","Johnny Cash","John Crocker","Gucci Maine","Waka Flocka","Wiz Khalifa","Chris Brown","2 Chains","Drake","Chief Keif","Bob Marley","Snoop Dog","Lady Gaga","Madonna","Lil Wayne","Katy Perry","The Godfather","Men In Black","The Wolf Of Wallstreet","Space Jam","Fifty Shades of Grey","The Dark Knight","Lord of the Rings","Fight Club","Forrest Gump","Memento","Gladiator","Back to the Future","The Lion King","The Shining","Braveheart","Friday","Training Day","The Shawshank Redemption","Scarface","Warrior","Michael Jordan","Deion Sanders","Bo Jackson","Muhammad Ali","Babe Ruth","Lebron James","Tiger Woods","Mike Tyson","Roger Federer","Jackie Robinson","Wayne Gretzky","Michael Phelps","Bruce Lee","Kobe Bryant","Usain Bolt","Cristiano Ronaldo","Tom Brady","Lance Armstrong","Manny Pacquiao","O.J. Simpson"]
     
     @IBOutlet weak var questionLabel: UILabel!
+//    var charade: PFObject!
+    var charadeAnswer: String?
     
     // right answer + 3 random answers
-    var answerArray = ["Elvis Presley","Kanye West","Prince","Michael Jackson"];
+        
     
     // index of right answer in array
     var correct = 2
@@ -37,21 +39,23 @@ class GuessCharadeViewController: UIViewController {
 
         let randomIndex = Int(arc4random_uniform(UInt32(randomCharadeArray.count - 3)))
         
-//        answerArray = [randomCharadeArray[randomIndex],randomCharadeArray[randomIndex + 1], randomCharadeArray[randomIndex + 2],charadeLabel.text]
+        var answerArray = [randomCharadeArray[randomIndex],randomCharadeArray[randomIndex + 1], randomCharadeArray[randomIndex + 2], charadeAnswer]
         
         // shuffle answerArray
         // then set button titles from array
 
         
         // Do any additional setup after loading the view.
-    }
     
-    override func viewDidAppear(animated: Bool) {
-        
         buttonA.setTitle(answerArray[0], forState: .Normal)
         buttonB.setTitle(answerArray[1], forState: .Normal)
         buttonC.setTitle(answerArray[2], forState: .Normal)
         buttonD.setTitle(answerArray[3], forState: .Normal)
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
         
     }
 
