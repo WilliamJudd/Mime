@@ -15,6 +15,7 @@ class WatchCharadeViewController: UIViewController {
     @IBOutlet weak var watchCharade: UIImageView!
     
     var charrade: PFObject?
+    var charadeAnswer: String?
     var moviePlayer : MPMoviePlayerController!
     
     override func viewDidLoad() {
@@ -62,7 +63,13 @@ class WatchCharadeViewController: UIViewController {
         
             var guessVC = self.storyboard?.instantiateViewControllerWithIdentifier("guessVC") as
             GuessCharadeViewController
-            
+        println(charrade?.objectForKey("word"))
+        
+//            guessVC.charade = charrade?.objectForKey("word") as? PFObject
+        charadeAnswer = charrade?.objectForKey("word") as? String
+        
+        guessVC.charadeAnswer = charadeAnswer
+        
             self.navigationController?.pushViewController(guessVC, animated: true)
             
         

@@ -26,8 +26,8 @@ class HomeTableViewController: UITableViewController {
             
             charades = []
             
-            let backbutt = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
-            navigationItem.leftBarButtonItem = backbutt
+//            let backbutt = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: "back")
+//            navigationItem.leftBarButtonItem = backbutt
             
             let query = PFQuery(className: "Charades")
             query.whereKey("recipientIds", equalTo: PFUser.currentUser().objectId)
@@ -38,7 +38,7 @@ class HomeTableViewController: UITableViewController {
                     self.charades = objects
                     self.tableView?.reloadData()
                     
-                    println("printing: \(self.charades)")
+//                    println("printing: \(self.charades)")
                     
                     
                 } else {
@@ -46,12 +46,12 @@ class HomeTableViewController: UITableViewController {
                 }
             }
             
-            func back() {
-                
-                
-                self.dismissViewControllerAnimated(false, completion: nil)
-    
-            }
+//            func back() {
+//                
+//                
+//                self.dismissViewControllerAnimated(false, completion: nil)
+//    
+//            }
     }
         
        
@@ -91,7 +91,15 @@ class HomeTableViewController: UITableViewController {
             
             self.navigationController?.pushViewController(watchVC, animated:true)
         }
+    @IBAction func backButton(sender: AnyObject) {
+   
+        self.dismissViewControllerAnimated(true, completion: nil)
+
+    
     }
+    }
+
+
 
 
 

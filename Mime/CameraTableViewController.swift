@@ -18,7 +18,7 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
     var videoFilePath: NSString?
     var picked: Bool?
     
-    var correctCharade: String!
+    var charade: String!
     
     
     override func viewDidLoad() {
@@ -174,7 +174,7 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
             if error == nil {
                 let message = PFObject(className: "Charades")
                 message.setObject(file, forKey: fileKey)
-                message.setObject(self.correctCharade, forKey: "correct")
+                message.setObject(self.charade, forKey: "word")
                 
                 message.setObject(fileType, forKey: "fileType")
                 message.setObject(self.recipients!, forKey: "recipientIds")

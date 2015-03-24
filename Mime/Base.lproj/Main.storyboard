@@ -160,7 +160,13 @@
                             <outlet property="delegate" destination="we7-Cv-EpB" id="8yk-sV-IJJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hcC-kM-4fh"/>
+                    <navigationItem key="navigationItem" id="hcC-kM-4fh">
+                        <barButtonItem key="leftBarButtonItem" title="❮ Back" id="G72-kQ-QEW">
+                            <connections>
+                                <action selector="backButton:" destination="we7-Cv-EpB" id="DCB-ee-k2I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5N-Kb-37T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,7 +363,13 @@
                             <constraint firstItem="a4C-6b-Na7" firstAttribute="top" secondItem="b8D-fy-fUh" secondAttribute="bottom" id="3Hv-Rb-fZi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JCw-nm-sBg"/>
+                    <navigationItem key="navigationItem" id="JCw-nm-sBg">
+                        <barButtonItem key="leftBarButtonItem" title="❮ Back" id="Z4J-PJ-DFe">
+                            <connections>
+                                <action selector="backButton:" destination="Tae-g9-mm6" id="04b-y0-8LH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="charadeLabel" destination="5Ya-aT-yvG" id="OEI-NM-74d"/>
@@ -500,7 +512,13 @@
                             <constraint firstItem="QkR-r2-AEv" firstAttribute="leading" secondItem="v1T-3p-9zy" secondAttribute="leading" id="rrL-FC-mJs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="o8g-CW-cWZ"/>
+                    <navigationItem key="navigationItem" id="o8g-CW-cWZ">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="MI6-71-3q0">
+                            <connections>
+                                <action selector="backButton:" destination="dqH-AD-Ud0" id="Xzt-s2-y6C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
