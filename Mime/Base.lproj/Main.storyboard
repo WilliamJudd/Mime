@@ -35,8 +35,6 @@
             <string>JCkg</string>
             <string>JCkg</string>
             <string>JCkg</string>
-            <string>JCkg</string>
-            <string>JCkg</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -122,13 +120,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="3yS-vq-9gf">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Title" id="BE7-W3-tZ6"/>
-                            </items>
-                        </navigationBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uDG-pe-5i2">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -143,9 +134,6 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="camBarButItem" destination="3yS-vq-9gf" id="Byx-D9-ExA"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McO-1I-ENs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,6 +191,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="N0g-PV-E3c" secondAttribute="trailing" constant="-16" id="hAj-4S-Zjg"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="watchCharade" destination="N0g-PV-E3c" id="SnZ-zo-Ah6"/>
@@ -462,11 +451,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ZhP-Tv-PKH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ho5-0I-NpC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkR-r2-AEv">
-                                <rect key="frame" x="0.0" y="209" width="320" height="171"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkR-r2-AEv">
+                                <rect key="frame" x="16" y="172" width="288" height="160"/>
                                 <state key="normal" backgroundImage="michael_jordan.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -474,8 +463,8 @@
                                     <action selector="sportsClicked:" destination="dqH-AD-Ud0" eventType="touchUpInside" id="bTZ-lW-fJZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1T-3p-9zy">
-                                <rect key="frame" x="0.0" y="388" width="320" height="172"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1T-3p-9zy">
+                                <rect key="frame" x="16" y="336" width="288" height="160"/>
                                 <state key="normal" backgroundImage="katy_perry_roar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -483,8 +472,11 @@
                                     <action selector="musicClicked:" destination="dqH-AD-Ud0" eventType="touchUpInside" id="4Sm-yL-2lt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-NO-kWQ">
-                                <rect key="frame" x="0.0" y="30" width="320" height="171"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-NO-kWQ">
+                                <rect key="frame" x="16" y="8" width="288" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="WkD-jE-yuz"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="Leodicaprio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -494,9 +486,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="trailing" secondItem="QkR-r2-AEv" secondAttribute="trailing" id="KVf-cQ-IBl"/>
+                            <constraint firstItem="v1T-3p-9zy" firstAttribute="trailing" secondItem="QkR-r2-AEv" secondAttribute="trailing" id="PUI-xl-uAw"/>
+                            <constraint firstItem="QkR-r2-AEv" firstAttribute="top" secondItem="pyI-NO-kWQ" secondAttribute="bottom" constant="4" id="WLI-Ym-VAC"/>
+                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="leading" secondItem="Ho5-0I-NpC" secondAttribute="leadingMargin" id="Z4w-pB-Pnc"/>
+                            <constraint firstItem="QkR-r2-AEv" firstAttribute="centerY" secondItem="Ho5-0I-NpC" secondAttribute="centerY" id="aIl-Dx-7mW"/>
+                            <constraint firstItem="v1T-3p-9zy" firstAttribute="trailing" secondItem="Ho5-0I-NpC" secondAttribute="trailingMargin" id="dnu-5z-BRr"/>
+                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="top" secondItem="INi-Yu-6Oe" secondAttribute="bottom" constant="8" symbolic="YES" id="k5b-Ce-Wug"/>
+                            <constraint firstItem="v1T-3p-9zy" firstAttribute="top" secondItem="QkR-r2-AEv" secondAttribute="bottom" constant="4" id="rUg-aO-wPl"/>
+                            <constraint firstItem="ZhP-Tv-PKH" firstAttribute="top" secondItem="v1T-3p-9zy" secondAttribute="bottom" constant="8" symbolic="YES" id="rVz-tN-Vzi"/>
+                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="leading" secondItem="QkR-r2-AEv" secondAttribute="leading" id="rim-gZ-a5r"/>
+                            <constraint firstItem="QkR-r2-AEv" firstAttribute="leading" secondItem="v1T-3p-9zy" secondAttribute="leading" id="rrL-FC-mJs"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FSm-21-Pqj"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" id="o8g-CW-cWZ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGb-FC-XaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -782,10 +787,10 @@
             </objects>
             <point key="canvasLocation" x="2580" y="1802"/>
         </scene>
-        <!--Guess Charade View Controller-->
+        <!--GuessVC-->
         <scene sceneID="0fJ-Tm-nvw">
             <objects>
-                <viewController id="t2N-60-O2O" customClass="GuessCharadeViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="guessVC" title="GuessVC" id="t2N-60-O2O" customClass="GuessCharadeViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GKm-hh-B4i"/>
                         <viewControllerLayoutGuide type="bottom" id="diJ-gN-T70"/>
@@ -863,13 +868,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onw-Yk-5Hq">
                                 <rect key="frame" x="139" y="184" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6da-Uv-f80">
                                 <rect key="frame" x="139" y="425" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -888,76 +893,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7I-aO-22W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3241" y="626"/>
-        </scene>
-        <!--Guess Charade View Controller-->
-        <scene sceneID="cgs-rQ-pCo">
-            <objects>
-                <viewController id="d6n-jA-7b8" customClass="GuessCharadeViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="B0D-L6-GBr"/>
-                        <viewControllerLayoutGuide type="bottom" id="7ge-B2-Wbr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IZk-81-rCJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akU-cx-a72">
-                                <rect key="frame" x="160" y="432" width="160" height="140"/>
-                                <color key="backgroundColor" red="1" green="0.34048286747679457" blue="0.3280361513023925" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="whiteX">
-                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonDClicked:" destination="d6n-jA-7b8" eventType="touchUpInside" id="Wmt-D2-zEi"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXm-i2-Hco">
-                                <rect key="frame" x="207" y="101" width="97" height="31"/>
-                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="34"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ3-eE-lZt">
-                                <rect key="frame" x="243" y="134" width="61" height="36"/>
-                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="16"/>
-                                <state key="normal" title="GUESS!">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8x-p2-n9D">
-                                <rect key="frame" x="139" y="224" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ung-Mc-8of">
-                                <rect key="frame" x="0.0" y="432" width="160" height="138"/>
-                                <color key="backgroundColor" red="0.0" green="0.87450980392156863" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="whitecheck2">
-                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonCClicked:" destination="d6n-jA-7b8" eventType="touchUpInside" id="SL6-Pc-UHy"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="buttonC" destination="ung-Mc-8of" id="MSX-mb-zOv"/>
-                        <outlet property="buttonD" destination="akU-cx-a72" id="oye-BV-5C7"/>
-                        <outlet property="questionLabel" destination="z8x-p2-n9D" id="ybF-bN-VZj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uuo-Gz-hsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3592" y="626"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iA9-95-Hru">
@@ -984,8 +919,6 @@
         <image name="katy_perry_roar.png" width="376" height="223"/>
         <image name="michael_jordan.png" width="376" height="223"/>
         <image name="shuffle" width="33" height="32"/>
-        <image name="whiteX" width="70" height="70"/>
-        <image name="whitecheck2" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6UU-Hx-THj"/>
