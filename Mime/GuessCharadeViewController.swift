@@ -35,6 +35,14 @@ class GuessCharadeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let randomIndex = Int(arc4random_uniform(UInt32(randomCharadeArray.count - 3)))
+        
+//        answerArray = [randomCharadeArray[randomIndex],randomCharadeArray[randomIndex + 1], randomCharadeArray[randomIndex + 2],charadeLabel.text]
+        
+        // shuffle answerArray
+        // then set button titles from array
+
+        
         // Do any additional setup after loading the view.
     }
     

@@ -18,9 +18,8 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
     var videoFilePath: NSString?
     var picked: Bool?
     
-    var charade: String!
+    var correctCharade: String!
     
-    @IBOutlet weak var camBarButItem: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +28,11 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
         
         let cancelButton = UIBarButtonItem(title: "Cancel", style:
             UIBarButtonItemStyle.Plain, target: self, action: "cancel")
-        camBarButItem.topItem?.setLeftBarButtonItem(cancelButton, animated: true)
+        navigationItem.setLeftBarButtonItem(cancelButton, animated: true)
         
-        let sendButton = UIBarButtonItem(title: "Send", style: UIBarButtonItemStyle.Plain, target: self, action: "send")
-        camBarButItem.topItem?.setRightBarButtonItem(sendButton, animated: true)
-        
-//        tableView = UITableView(frame: view.bounds, style: UITableViewStyle.Plain)
-//        tableView?.delegate = self
-//        tableView?.dataSource = self
-//        view.addSubview(tableView!)
+        let send = UIBarButtonItem(title: "Send", style: UIBarButtonItemStyle.Plain, target: self, action: "send")
+        navigationItem.setRightBarButtonItem(send, animated: true)
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -120,6 +115,8 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
             }
         }
         dismissViewControllerAnimated(true, completion: nil)
+
+    
     }
     
     func cancel() {
@@ -130,9 +127,15 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
         if image == nil && videoFilePath == nil {
             UIAlertView(title: "Try Again", message: "Pick a photo or video", delegate: nil, cancelButtonTitle: "OK").show()
             presentViewController(imagePicker!, animated: false, completion: nil)
+        
         } else {
-            uploadMessage()
-            presentViewController(MenuViewController(), animated: false, completion: nil)
+           uploadMessage()
+            
+            var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+            MenuViewController
+            
+            self.navigationController?.pushViewController(menuVC, animated: true)
+        
         }
     }
     
@@ -171,7 +174,8 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
             if error == nil {
                 let message = PFObject(className: "Charades")
                 message.setObject(file, forKey: fileKey)
-                message.setObject(self.charade, forKey: "word")
+                message.setObject(self.correctCharade, forKey: "correct")
+                
                 message.setObject(fileType, forKey: "fileType")
                 message.setObject(self.recipients!, forKey: "recipientIds")
                 message.setObject(PFUser.currentUser().objectId, forKey: "senderId")
@@ -185,9 +189,16 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
                     }
                 })
             } else {
-                UIAlertView(title: "Error", message: "Try agian", delegate: nil, cancelButtonTitle: "OK").show()
+//                UIAlertView(title: "Error", message: "Try agian", delegate: nil, cancelButtonTitle: "OK").show()
+
+            
             }
+        
+        
         }
+    
+     
+    
     }
     
     func resizeImage(image: UIImage, width: CGFloat, height: CGFloat) -> UIImage {
@@ -203,6 +214,8 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
     
     
     }
+
+
 }
 
 

@@ -93,9 +93,12 @@ class CharadeViewController: UIViewController {
         var cameraTVC = self.storyboard?.instantiateViewControllerWithIdentifier("cameraTVC") as
         CameraTableViewController
         
-        cameraTVC.charade = charadeLabel.text
+        cameraTVC.correctCharade = charadeLabel.text
         
-        presentViewController(cameraTVC, animated: true, completion: nil)
+        let navController = UINavigationController(rootViewController: cameraTVC)
+        
+        
+        presentViewController(navController, animated: true, completion: nil)
     
     }
     
