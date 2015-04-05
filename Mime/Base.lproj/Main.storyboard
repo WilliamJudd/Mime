@@ -828,6 +828,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonCClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="8xl-tp-p00"/>
+                                    <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="8QX-Uq-W1r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6Z-F8-C3D">
@@ -840,6 +841,7 @@
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="XnO-M5-wtw"/>
                                     <action selector="buttonDClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="18L-UC-y0t"/>
                                 </connections>
                             </button>
@@ -854,6 +856,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonBClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="LNj-6S-yKB"/>
+                                    <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="pjI-XL-YlB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-v4-Lhw">
@@ -867,6 +870,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonAClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="XFZ-tf-3tc"/>
+                                    <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="qea-i3-3xa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH8-lp-qO2">

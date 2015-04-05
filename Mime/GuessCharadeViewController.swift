@@ -20,7 +20,7 @@ class GuessCharadeViewController: UIViewController {
         
     
     // index of right answer in array
-    var correct = 2
+    var correctButton: UIButton?
     
     @IBOutlet weak var buttonA: UIButton!
     @IBOutlet weak var buttonB: UIButton!
@@ -33,15 +33,26 @@ class GuessCharadeViewController: UIViewController {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let randomIndex = Int(arc4random_uniform(UInt32(randomCharadeArray.count - 3)))
         
-        var answerArray = [randomCharadeArray[randomIndex],randomCharadeArray[randomIndex + 1], randomCharadeArray[randomIndex + 2], charadeAnswer]
+        let randomButtonIndex = Int(arc4random_uniform(UInt32(3)))
         
-        // shuffle answerArray
+        var answerArray = [randomCharadeArray[randomIndex],randomCharadeArray[randomIndex + 1], randomCharadeArray[randomIndex + 2]]
+        var finalAnswerArray = NSMutableArray()
+        for i in 0...3 {
+            if i == randomButtonIndex {
+                finalAnswerArray[i] = charadeAnswer!
+            } else {
+                finalAnswerArray[i] = answerArray.last!
+                answerArray.removeLast()
+            }
+        }
+        
+        setupCorrectButton(randomButtonIndex)
+        
         // then set button titles from array
 
         
@@ -52,6 +63,21 @@ class GuessCharadeViewController: UIViewController {
         buttonC.setTitle(answerArray[2], forState: .Normal)
         buttonD.setTitle(answerArray[3], forState: .Normal)
 
+    }
+    
+    func setupCorrectButton(index: Int) {
+        switch (index) {
+        case (0):
+            correctButton = buttonA
+        case (1):
+            correctButton = buttonB
+        case (2):
+            correctButton = buttonC
+        case (3):
+            correctButton = buttonD
+        default:
+            correctButton = buttonA
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -65,58 +91,11 @@ class GuessCharadeViewController: UIViewController {
     }
     
     
-//    func randomQuestion(){
-//        
-////        var randomNumber = arc4random_uniform() % 4
-//        randomNumber += 1
-//        
-//        switch(randomNumber){
-//            
-//        case 1:
-//            
-//            questionLabel.text = "What is the Charade"
-//            buttonA.setTitle("Charade 1", forState: UIControlState.normal)
-//            
-//            break
-//        case 2:
-//            
-//            break
-//            
-//        case 3:
-//            
-//            break
-//            
-//        case 4:
-//            
-//            break
-//            
-//        default:
-//            
-//            break
-//            
-//            
-//        }
-//        
-//    }
-  
-    @IBAction func buttonAClicked(sender: AnyObject) {
-    
-        if correct == 0 {
-            
-            // win
-            
-        } else {
-            
-            // wrong
-            
-        }
-        
-    }
 
+  
+    @IBAction func buttonClicked(sender: AnyObject) {
     
-    @IBAction func buttonBClicked(sender: AnyObject) {
-        
-        if correct == 1 {
+        if sender.isEqual(correctButton) {
             
             // win
             
@@ -125,16 +104,7 @@ class GuessCharadeViewController: UIViewController {
             // wrong
             
         }
-    }
-    
-    
-    @IBAction func buttonCClicked(sender: AnyObject) {
-    
-    }
-    
-    
-    @IBAction func buttonDClicked(sender: AnyObject) {
-    
+        
     }
 
 }
