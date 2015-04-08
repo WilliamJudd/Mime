@@ -58,10 +58,10 @@ class GuessCharadeViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     
-        buttonA.setTitle(answerArray[0], forState: .Normal)
-        buttonB.setTitle(answerArray[1], forState: .Normal)
-        buttonC.setTitle(answerArray[2], forState: .Normal)
-        buttonD.setTitle(answerArray[3], forState: .Normal)
+        buttonA.setTitle(finalAnswerArray[0] as NSString, forState: .Normal)
+        buttonB.setTitle(finalAnswerArray[1] as NSString, forState: .Normal)
+        buttonC.setTitle(finalAnswerArray[2] as NSString, forState: .Normal)
+        buttonD.setTitle(finalAnswerArray[3] as NSString, forState: .Normal)
 
     }
     
