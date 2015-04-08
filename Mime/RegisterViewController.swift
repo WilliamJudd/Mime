@@ -96,6 +96,15 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let recognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(recognizer)
+    }
+    
+    func dismissKeyboard() {
+        self.usernameTextfield.resignFirstResponder()
+        self.passwordTextfield.resignFirstResponder()
+        self.emailTextfield.resignFirstResponder()
+        self.repeatPassword.resignFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
