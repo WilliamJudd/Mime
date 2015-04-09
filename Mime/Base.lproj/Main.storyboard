@@ -33,8 +33,6 @@
             <string>JCkg</string>
             <string>JCkg</string>
             <string>JCkg</string>
-            <string>JCkg</string>
-            <string>JCkg</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -137,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McO-1I-ENs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2580" y="3172"/>
+            <point key="canvasLocation" x="740" y="1056"/>
         </scene>
         <!--homeTVC-->
         <scene sceneID="eVq-Ch-5bg">
@@ -557,20 +555,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-Ut-YFA">
-                                <rect key="frame" x="0.0" y="424" width="244" height="64"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="66" maxY="0.0"/>
-                                <state key="normal" title="REQUEST">
-                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="v9A-lg-4WC" kind="show" id="cyu-QK-quz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa9-VL-loc">
                                 <rect key="frame" x="0.0" y="496" width="304" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -583,21 +567,6 @@
                                 </state>
                                 <connections>
                                     <segue destination="PVk-6H-I7y" kind="show" id="zdW-i0-pwy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-9s-aUS">
-                                <rect key="frame" x="0.0" y="352" width="174" height="64"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="27"/>
-                                <color key="tintColor" red="0.49575585509999998" green="0.5" blue="0.26513447979999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="9" maxY="0.0"/>
-                                <state key="normal" title="SEARCH">
-                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="guessButton:" destination="9hZ-Ji-3ng" eventType="touchUpInside" id="AIh-E7-2st"/>
-                                    <segue destination="U9a-gU-SxV" kind="show" id="cds-lY-q1b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEO-wQ-cnp">
@@ -827,7 +796,6 @@
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonCClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="8xl-tp-p00"/>
                                     <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="8QX-Uq-W1r"/>
                                 </connections>
                             </button>
@@ -842,7 +810,6 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="XnO-M5-wtw"/>
-                                    <action selector="buttonDClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="18L-UC-y0t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZR-sf-p20">
@@ -855,7 +822,6 @@
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonBClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="LNj-6S-yKB"/>
                                     <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="pjI-XL-YlB"/>
                                 </connections>
                             </button>
@@ -869,7 +835,6 @@
                                     <color key="titleShadowColor" red="0.062745101750000004" green="0.1294117719" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonAClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="XFZ-tf-3tc"/>
                                     <action selector="buttonClicked:" destination="t2N-60-O2O" eventType="touchUpInside" id="qea-i3-3xa"/>
                                 </connections>
                             </button>

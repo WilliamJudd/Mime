@@ -96,15 +96,38 @@ class GuessCharadeViewController: UIViewController {
     @IBAction func buttonClicked(sender: AnyObject) {
     
         if sender.isEqual(correctButton) {
+
             
-            // win
+            
+//            var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+//                        MenuViewController
+////
+//                self.navigationController?.viewControllerForUnwindSegueAction(action: Selector, fromViewController: <#UIViewController#>, withSender: <#AnyObject?#>)
+            
+            displayMyAlertMessage("CORRECT!!")
+
+           
+            
             
         } else {
             
-            // wrong
-            
+            displayMyAlertMessage("All fields are required")
+            return
         }
         
     }
 
+    
+    func displayMyAlertMessage(userMessage:String){
+        
+        var myAlert = UIAlertController(title: "", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        
+        myAlert.addAction(okAction)
+        
+        self.presentViewController(myAlert, animated: true, completion: nil)
+//
+    }
+    
 }

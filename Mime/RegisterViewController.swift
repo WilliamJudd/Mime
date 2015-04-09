@@ -37,13 +37,14 @@ class RegisterViewController: UIViewController {
             displayMyAlertMessage("All fields are required")
             return
         }
+        
         if(userPassword != userRepeatPassword)
 
         {
 
         displayMyAlertMessage("Passwords to not match")
         return
-   
+            
         }else{
    
         var user = PFUser()
@@ -69,7 +70,7 @@ class RegisterViewController: UIViewController {
                 self.navigationController?.pushViewController(menuVC, animated: true)
                 
             } else {
-               
+               self.displayMyAlertMessage("All Fields Are required")
             }
         }
         
