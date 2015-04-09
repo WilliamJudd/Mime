@@ -131,11 +131,15 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
         } else {
            uploadMessage()
             
-            var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
-            MenuViewController
-            
-            self.navigationController?.pushViewController(menuVC, animated: true)
         
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
+//            
+//            var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+//            MenuViewController
+//
+//            self.storyboard.
+//            self.navigationController?.popToViewController(menuVC, animated: true)
         }
     }
     
