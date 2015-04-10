@@ -186,6 +186,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N0g-PV-E3c">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button autoresizesSubviews="NO" alpha="0.5499999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBp-lF-bTx">
+                                <rect key="frame" x="0.0" y="512" width="163" height="56"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Report">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reportButton:" destination="9j1-6w-PJW" eventType="touchUpInside" id="mao-lp-oh2"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" alpha="0.55000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUx-Eg-PCF">
+                                <rect key="frame" x="163" y="512" width="157" height="56"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Block">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blockButton:" destination="9j1-6w-PJW" eventType="touchUpInside" id="nkQ-HW-mLZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -204,6 +224,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o98-lK-r9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2798" y="626"/>
+        </scene>
+        <!--Mail Composer View Controller-->
+        <scene sceneID="2cP-Mm-sMP">
+            <objects>
+                <viewController storyboardIdentifier="emailVC" id="gUF-EA-5zF" customClass="MailComposerViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4bV-Ze-iLw"/>
+                        <viewControllerLayoutGuide type="bottom" id="iGT-GR-uSL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OUc-xI-aPp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBD-Ex-x7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2981" y="1274"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="W08-6f-UWE">

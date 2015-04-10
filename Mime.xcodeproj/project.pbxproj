@@ -21,6 +21,7 @@
 		3D3919271AB4D8DD00A51EA2 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3919261AB4D8DD00A51EA2 /* HomeTableViewController.swift */; };
 		3D3919291AB4F73D00A51EA2 /* CharadeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */; };
 		3D39192B1AB5294D00A51EA2 /* GuessCharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39192A1AB5294D00A51EA2 /* GuessCharadeViewController.swift */; };
+		3D47150B1AD8810B00907711 /* MailComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47150A1AD8810B00907711 /* MailComposerViewController.swift */; };
 		3D5624681AB0EF2000897D85 /* CharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5624671AB0EF2000897D85 /* CharadeViewController.swift */; };
 		3D5EA5F01AB7C16400A069E8 /* CharadeVC.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EA5EF1AB7C16400A069E8 /* CharadeVC.png */; };
 		3DD763FE1AB9004800D1081F /* WatchCharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD763FD1AB9004800D1081F /* WatchCharadeViewController.swift */; };
@@ -83,6 +84,7 @@
 		3D3919261AB4D8DD00A51EA2 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeMenuViewController.swift; sourceTree = "<group>"; };
 		3D39192A1AB5294D00A51EA2 /* GuessCharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessCharadeViewController.swift; sourceTree = "<group>"; };
+		3D47150A1AD8810B00907711 /* MailComposerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailComposerViewController.swift; sourceTree = "<group>"; };
 		3D5624671AB0EF2000897D85 /* CharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeViewController.swift; sourceTree = "<group>"; };
 		3D5EA5EF1AB7C16400A069E8 /* CharadeVC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharadeVC.png; sourceTree = "<group>"; };
 		3DD763FD1AB9004800D1081F /* WatchCharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchCharadeViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				3D3919281AB4F73D00A51EA2 /* CharadeMenuViewController.swift */,
 				3D5624671AB0EF2000897D85 /* CharadeViewController.swift */,
 				3DD763FD1AB9004800D1081F /* WatchCharadeViewController.swift */,
+				3D47150A1AD8810B00907711 /* MailComposerViewController.swift */,
 				3D39192A1AB5294D00A51EA2 /* GuessCharadeViewController.swift */,
 			);
 			name = Charade;
@@ -420,6 +423,7 @@
 				3D3919291AB4F73D00A51EA2 /* CharadeMenuViewController.swift in Sources */,
 				3DF32C581AAF6BA10024899F /* RequestTableViewController.swift in Sources */,
 				3DFBB55E1AB8F6D800395AE1 /* Data.swift in Sources */,
+				3D47150B1AD8810B00907711 /* MailComposerViewController.swift in Sources */,
 				3DF32C5C1AAF6BD80024899F /* MyFriendsTableViewController.swift in Sources */,
 				3D5624681AB0EF2000897D85 /* CharadeViewController.swift in Sources */,
 				3DF32C601AAF957E0024899F /* CameraTableViewController.swift in Sources */,
