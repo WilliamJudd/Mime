@@ -96,11 +96,13 @@ class WatchCharadeViewController: UIViewController, MFMailComposeViewControllerD
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+//        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
         mailComposerVC.setToRecipients(["someone@somewhere.com"])
+        
         mailComposerVC.setSubject("Sending you an in-app e-mail...")
-        mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
+        //insert PFObject
+        mailComposerVC.setMessageBody(charrade?.description, isHTML: false)
         
         return mailComposerVC
     }

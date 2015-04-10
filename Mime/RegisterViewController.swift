@@ -70,7 +70,8 @@ class RegisterViewController: UIViewController {
                 self.navigationController?.pushViewController(menuVC, animated: true)
                 
             } else {
-               self.displayMyAlertMessage("All Fields Are required")
+               
+                self.displayMyAlertMessage("All Fields Are required")
             }
         }
         
