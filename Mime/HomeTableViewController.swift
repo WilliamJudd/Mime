@@ -65,18 +65,18 @@ class HomeTableViewController: UITableViewController {
             
             let cellId: NSString = "cell"
             
-            var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId) as? UITableViewCell
+            var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId as String) as? UITableViewCell
             
             if (cell == nil) {
-                cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellId)
+                cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellId as String)
             }
             
             
-            let message = charades![indexPath.row] as PFObject
+            let message = charades![indexPath.row] as! PFObject
             
-            cell?.textLabel?.text = message["senderName"] as NSString
+            cell?.textLabel?.text = message["senderName"] as! NSString as String
             
-            let fileType = message["fileType"] as NSString
+            let fileType = message["fileType"] as! NSString
             
             cell?.imageView?.image = UIImage(named: fileType == "image" ? "icon_image" : "icon_video")
             return cell!
@@ -85,9 +85,9 @@ class HomeTableViewController: UITableViewController {
     
         override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
             
-            var watchVC = self.storyboard?.instantiateViewControllerWithIdentifier("watchVC") as WatchCharadeViewController
+            var watchVC = self.storyboard?.instantiateViewControllerWithIdentifier("watchVC") as! WatchCharadeViewController
             
-            watchVC.charrade = self.charades?.objectAtIndex(indexPath.row) as PFObject?
+            watchVC.charrade = self.charades?.objectAtIndex(indexPath.row) as! PFObject?
             
             self.navigationController?.pushViewController(watchVC, animated:true)
         }

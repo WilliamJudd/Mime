@@ -64,7 +64,7 @@ class WatchCharadeViewController: UIViewController, MFMailComposeViewControllerD
     
     func guess() {
         
-            var guessVC = self.storyboard?.instantiateViewControllerWithIdentifier("guessVC") as
+            var guessVC = self.storyboard?.instantiateViewControllerWithIdentifier("guessVC") as!
             GuessCharadeViewController
         println(charrade?.objectForKey("word"))
         
@@ -96,13 +96,14 @@ class WatchCharadeViewController: UIViewController, MFMailComposeViewControllerD
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
-//        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
         mailComposerVC.setToRecipients(["someone@somewhere.com"])
         
         mailComposerVC.setSubject("Sending you an in-app e-mail...")
         //insert PFObject
-        mailComposerVC.setMessageBody(charrade?.description, isHTML: false)
+        
+        mailComposerVC.setMessageBody("charadeID:\(charrade?.objectId)", isHTML: false)
         
         return mailComposerVC
     }

@@ -58,10 +58,10 @@ class GuessCharadeViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     
-        buttonA.setTitle(finalAnswerArray[0] as NSString, forState: .Normal)
-        buttonB.setTitle(finalAnswerArray[1] as NSString, forState: .Normal)
-        buttonC.setTitle(finalAnswerArray[2] as NSString, forState: .Normal)
-        buttonD.setTitle(finalAnswerArray[3] as NSString, forState: .Normal)
+        buttonA.setTitle(finalAnswerArray[0] as! NSString as String, forState: .Normal)
+        buttonB.setTitle(finalAnswerArray[1] as! NSString as String, forState: .Normal)
+        buttonC.setTitle(finalAnswerArray[2] as! NSString as String, forState: .Normal)
+        buttonD.setTitle(finalAnswerArray[3] as! NSString as String, forState: .Normal)
 
     }
     
@@ -104,30 +104,32 @@ class GuessCharadeViewController: UIViewController {
 ////
 //                self.navigationController?.viewControllerForUnwindSegueAction(action: Selector, fromViewController: <#UIViewController#>, withSender: <#AnyObject?#>)
             
-            displayMyAlertMessage("CORRECT!!")
 
-           
-            
-            
-        } else {
-            
-            displayMyAlertMessage("All fields are required")
-            return
-        }
+           var myAlert = UIAlertController(title: "", message: "CORRECT!!", preferredStyle: UIAlertControllerStyle.Alert)
         
-    }
-
-    
-    func displayMyAlertMessage(userMessage:String){
-        
-        var myAlert = UIAlertController(title: "", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+                
+            })
         
         myAlert.addAction(okAction)
         
         self.presentViewController(myAlert, animated: true, completion: nil)
-//
+            
+            
+        } else {
+            
+            var myAlert = UIAlertController(title: "", message: "All fields are required", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+                
+            })
+            
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+            return
+        }
+        
     }
     
 }

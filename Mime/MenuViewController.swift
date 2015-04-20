@@ -21,12 +21,15 @@ class MenuViewController: UIViewController {
     }
    
     override func viewDidAppear(animated: Bool) {
-        if PFUser.currentUser() == nil {
+        if PFUser.currentUser() == nil || !PFUser.currentUser().isAuthenticated() {
             
-            var loginVC = storyboard?.instantiateViewControllerWithIdentifier("loginVC") as LogInViewController
-            var appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-            
-            appDelegate.window?.rootViewController?.presentViewController(loginVC, animated: false, completion: { () -> Void in
+            var loginVC = storyboard?.instantiateViewControllerWithIdentifier("loginVC") as! LogInViewController
+//            var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//            
+//            appDelegate.window?.rootViewController?.presentViewController(loginVC, animated: false, completion: { () -> Void in
+//                
+//            })
+            presentViewController(loginVC, animated: false, completion: { () -> Void in
                 
             })
             
@@ -40,6 +43,10 @@ class MenuViewController: UIViewController {
     
     }
 
+    @IBAction func unwindToLogin(segue: UIStoryboardSegue) {
+        PFUser.logOut()
+    }
+    
     
     
     /*

@@ -56,7 +56,6 @@
 		3DF32C5C1AAF6BD80024899F /* MyFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF32C5B1AAF6BD80024899F /* MyFriendsTableViewController.swift */; };
 		3DF32C5E1AAF7F150024899F /* EditFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF32C5D1AAF7F150024899F /* EditFriendsTableViewController.swift */; };
 		3DF32C601AAF957E0024899F /* CameraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF32C5F1AAF957E0024899F /* CameraTableViewController.swift */; };
-		3DFBB55E1AB8F6D800395AE1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBB55D1AB8F6D800395AE1 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +123,6 @@
 		3DF32C5B1AAF6BD80024899F /* MyFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFriendsTableViewController.swift; sourceTree = "<group>"; };
 		3DF32C5D1AAF7F150024899F /* EditFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFriendsTableViewController.swift; sourceTree = "<group>"; };
 		3DF32C5F1AAF957E0024899F /* CameraTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTableViewController.swift; sourceTree = "<group>"; };
-		3DFBB55D1AB8F6D800395AE1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				3DE89AA51A7A9447001A55D3 /* Main.storyboard */,
-				3DFBB55D1AB8F6D800395AE1 /* Data.swift */,
 				3DE89AA11A7A9447001A55D3 /* AppDelegate.swift */,
 				3DE89AA31A7A9447001A55D3 /* ViewController.swift */,
 				3D01FD971A8FEC9D009D6E4B /* RegisterViewController.swift */,
@@ -422,7 +419,6 @@
 				3DF32C5E1AAF7F150024899F /* EditFriendsTableViewController.swift in Sources */,
 				3D3919291AB4F73D00A51EA2 /* CharadeMenuViewController.swift in Sources */,
 				3DF32C581AAF6BA10024899F /* RequestTableViewController.swift in Sources */,
-				3DFBB55E1AB8F6D800395AE1 /* Data.swift in Sources */,
 				3D47150B1AD8810B00907711 /* MailComposerViewController.swift in Sources */,
 				3DF32C5C1AAF6BD80024899F /* MyFriendsTableViewController.swift in Sources */,
 				3D5624681AB0EF2000897D85 /* CharadeViewController.swift in Sources */,

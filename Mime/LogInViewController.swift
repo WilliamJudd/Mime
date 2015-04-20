@@ -36,7 +36,7 @@ class LogInViewController: UIViewController {
                 
                 println("logged in as \(user)")
                 
-                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as!
                 MenuViewController
                 
                 

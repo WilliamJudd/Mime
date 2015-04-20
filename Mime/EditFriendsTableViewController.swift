@@ -40,7 +40,7 @@ class EditFriendsTableViewController: UITableViewController {
     }
     
     func isFriend(user: PFUser) -> Bool {
-        return (friends! as Array<PFUser>).filter({ (friend: PFUser) -> Bool in friend.objectId == user.objectId}).count > 0
+        return (friends! as! Array<PFUser>).filter({ (friend: PFUser) -> Bool in friend.objectId == user.objectId}).count > 0
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,11 +49,11 @@ class EditFriendsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellId: NSString = "cell"
-        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId) as? UITableViewCell
+        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId as String) as? UITableViewCell
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellId)
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellId as String)
         }
-        let user = allUsers![indexPath.row] as PFUser
+        let user = allUsers![indexPath.row] as! PFUser
         cell?.textLabel?.text = user.username
         cell?.accessoryType = isFriend(user) ? .Checkmark : .None
         return cell!
@@ -63,7 +63,7 @@ class EditFriendsTableViewController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
         var cell = tableView.cellForRowAtIndexPath(indexPath)
         
-        let user = allUsers![indexPath.row] as PFUser
+        let user = allUsers![indexPath.row] as! PFUser
         var friendsRelation = PFUser.currentUser().relationForKey("friendsRelation")
         
         if isFriend(user) {

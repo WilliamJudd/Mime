@@ -67,11 +67,11 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellId: NSString = "cell"
-        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId) as? UITableViewCell
+        var cell: UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId as String) as? UITableViewCell
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellId)
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellId as String)
         }
-        let user = friends![indexPath.row] as PFUser
+        let user = friends![indexPath.row] as! PFUser
         cell?.accessoryType = recipients!.containsObject(user) ? .Checkmark : .None
         cell?.textLabel?.text = user.username
         return cell!
@@ -85,7 +85,7 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
         var cell = tableView.cellForRowAtIndexPath(indexPath)
-        let user = friends![indexPath.row] as PFUser
+        let user = friends![indexPath.row] as! PFUser
         if cell!.accessoryType == .None {
             cell?.accessoryType = .Checkmark
             recipients?.addObject(user.objectId)
@@ -109,8 +109,8 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
         } else {
             videoFilePath = info[UIImagePickerControllerMediaURL]?.path
             if imagePicker!.sourceType == UIImagePickerControllerSourceType.Camera {
-                if UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(videoFilePath) {
-                    UISaveVideoAtPathToSavedPhotosAlbum(videoFilePath, nil, nil, nil)
+                if UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(videoFilePath as! String) {
+                    UISaveVideoAtPathToSavedPhotosAlbum(videoFilePath as! String, nil, nil, nil)
                 }
             }
         }
@@ -130,10 +130,9 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
         
         } else {
            uploadMessage()
-            
         
             
-            self.dismissViewControllerAnimated(true, completion: nil)
+           self.dismissViewControllerAnimated(true, completion: nil)
 //            
 //            var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
 //            MenuViewController
@@ -167,17 +166,17 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
             fileKey = "imageFile"
             
         } else {
-            fileData = NSData.dataWithContentsOfMappedFile(videoFilePath!) as? NSData
+            fileData = NSData.dataWithContentsOfMappedFile(videoFilePath! as String) as? NSData
             fileName = "video.mov"
             fileType = "video"
             fileKey = "videoFile"
         }
         
-        let file = PFFile(name: fileName, data: fileData, contentType: fileType)
+        let file = PFFile(name: fileName! as String, data: fileData!, contentType: fileType! as String)
         file.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
             if error == nil {
                 let message = PFObject(className: "Charades")
-                message.setObject(file, forKey: fileKey)
+                message.setObject(file, forKey: fileKey as! String)
                 message.setObject(self.charade, forKey: "word")
                 
                 message.setObject(fileType, forKey: "fileType")

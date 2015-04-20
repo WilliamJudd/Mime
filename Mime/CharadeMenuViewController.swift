@@ -30,7 +30,7 @@ class CharadeMenuViewController: UIViewController {
         
         
         //        var newVC = CharadeViewController()
-        var charadeVC =  self.storyboard?.instantiateViewControllerWithIdentifier("charadeVC") as CharadeViewController
+        var charadeVC =  self.storyboard?.instantiateViewControllerWithIdentifier("charadeVC") as! CharadeViewController
         charadeVC.category  = musicCharadeArray
         
         
@@ -49,7 +49,7 @@ class CharadeMenuViewController: UIViewController {
         
         
 //        var newVC = CharadeViewController()
-        var charadeVC =  self.storyboard?.instantiateViewControllerWithIdentifier("charadeVC") as CharadeViewController
+        var charadeVC =  self.storyboard?.instantiateViewControllerWithIdentifier("charadeVC") as! CharadeViewController
         charadeVC.category  = movieCharadeArray
         
         
@@ -64,7 +64,7 @@ class CharadeMenuViewController: UIViewController {
         
         
         //        var newVC = CharadeViewController()
-        var charadeVC =  self.storyboard?.instantiateViewControllerWithIdentifier("charadeVC") as CharadeViewController
+        var charadeVC =  self.storyboard?.instantiateViewControllerWithIdentifier("charadeVC") as! CharadeViewController
         charadeVC.category  = sportCharadeArray
         
         

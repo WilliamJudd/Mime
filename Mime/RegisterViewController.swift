@@ -54,7 +54,7 @@ class RegisterViewController: UIViewController {
     
         
         user.signUpInBackgroundWithBlock {
-            (succeeded: Bool!, error: NSError!) -> Void in
+            (succeeded: Bool, error: NSError!) -> Void in
             
             if error == nil {
                 println(user)
@@ -64,7 +64,7 @@ class RegisterViewController: UIViewController {
                 
                 // Hooray! Let them use the app now.
                 
-                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as
+                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as!
                 MenuViewController
                 
                 self.navigationController?.pushViewController(menuVC, animated: true)
