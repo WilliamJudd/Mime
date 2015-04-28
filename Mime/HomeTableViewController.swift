@@ -85,12 +85,16 @@ class HomeTableViewController: UITableViewController {
     
         override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
             
+            
             var watchVC = self.storyboard?.instantiateViewControllerWithIdentifier("watchVC") as! WatchCharadeViewController
+    
             
             watchVC.charrade = self.charades?.objectAtIndex(indexPath.row) as! PFObject?
             
             self.navigationController?.pushViewController(watchVC, animated:true)
-        }
+        
+    
+    }
     @IBAction func backButton(sender: AnyObject) {
    
         self.dismissViewControllerAnimated(true, completion: nil)

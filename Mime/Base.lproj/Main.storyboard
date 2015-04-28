@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9hZ-Ji-3ng">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9hZ-Ji-3ng">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Gungseouche.ttf">
-            <string>JCkg</string>
             <string>JCkg</string>
             <string>JCkg</string>
             <string>JCkg</string>
@@ -59,7 +58,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrc-PA-rit">
-                                <rect key="frame" x="160" y="518" width="160" height="50"/>
+                                <rect key="frame" x="160" y="326" width="160" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
                                 <state key="normal" title="REGISTER">
@@ -71,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyp-sr-cfF">
-                                <rect key="frame" x="0.0" y="518" width="159" height="50"/>
+                                <rect key="frame" x="0.0" y="326" width="159" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="15"/>
                                 <state key="normal" title="LOGIN">
@@ -159,7 +158,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="hcC-kM-4fh">
-                        <barButtonItem key="leftBarButtonItem" title="❮ Back" id="G72-kQ-QEW">
+                        <barButtonItem key="leftBarButtonItem" title="❮ Home" id="G72-kQ-QEW">
                             <connections>
                                 <action selector="backButton:" destination="we7-Cv-EpB" id="DCB-ee-k2I"/>
                             </connections>
@@ -224,25 +223,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o98-lK-r9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2798" y="626"/>
-        </scene>
-        <!--Mail Composer View Controller-->
-        <scene sceneID="2cP-Mm-sMP">
-            <objects>
-                <viewController storyboardIdentifier="emailVC" id="gUF-EA-5zF" customClass="MailComposerViewController" customModule="Mime" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4bV-Ze-iLw"/>
-                        <viewControllerLayoutGuide type="bottom" id="iGT-GR-uSL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OUc-xI-aPp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HBD-Ex-x7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2981" y="1274"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="W08-6f-UWE">
@@ -503,30 +483,31 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkR-r2-AEv">
-                                <rect key="frame" x="16" y="172" width="288" height="160"/>
-                                <state key="normal" backgroundImage="michael_jordan.png">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkR-r2-AEv">
+                                <rect key="frame" x="0.0" y="424" width="241" height="64"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sports">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="sportsClicked:" destination="dqH-AD-Ud0" eventType="touchUpInside" id="bTZ-lW-fJZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1T-3p-9zy">
-                                <rect key="frame" x="16" y="336" width="288" height="160"/>
-                                <state key="normal" backgroundImage="katy_perry_roar.png">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1T-3p-9zy">
+                                <rect key="frame" x="0.0" y="496" width="288" height="64"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Music">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="musicClicked:" destination="dqH-AD-Ud0" eventType="touchUpInside" id="4Sm-yL-2lt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-NO-kWQ">
-                                <rect key="frame" x="16" y="8" width="288" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="WkD-jE-yuz"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="Leodicaprio.png">
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-NO-kWQ">
+                                <rect key="frame" x="0.0" y="352" width="202" height="64"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Movies">
+                                    <color key="titleColor" red="0.19215686269999999" green="0.36862745099999999" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -535,19 +516,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="trailing" secondItem="QkR-r2-AEv" secondAttribute="trailing" id="KVf-cQ-IBl"/>
-                            <constraint firstItem="v1T-3p-9zy" firstAttribute="trailing" secondItem="QkR-r2-AEv" secondAttribute="trailing" id="PUI-xl-uAw"/>
-                            <constraint firstItem="QkR-r2-AEv" firstAttribute="top" secondItem="pyI-NO-kWQ" secondAttribute="bottom" constant="4" id="WLI-Ym-VAC"/>
-                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="leading" secondItem="Ho5-0I-NpC" secondAttribute="leadingMargin" id="Z4w-pB-Pnc"/>
-                            <constraint firstItem="QkR-r2-AEv" firstAttribute="centerY" secondItem="Ho5-0I-NpC" secondAttribute="centerY" id="aIl-Dx-7mW"/>
-                            <constraint firstItem="v1T-3p-9zy" firstAttribute="trailing" secondItem="Ho5-0I-NpC" secondAttribute="trailingMargin" id="dnu-5z-BRr"/>
-                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="top" secondItem="INi-Yu-6Oe" secondAttribute="bottom" constant="8" symbolic="YES" id="k5b-Ce-Wug"/>
-                            <constraint firstItem="v1T-3p-9zy" firstAttribute="top" secondItem="QkR-r2-AEv" secondAttribute="bottom" constant="4" id="rUg-aO-wPl"/>
-                            <constraint firstItem="ZhP-Tv-PKH" firstAttribute="top" secondItem="v1T-3p-9zy" secondAttribute="bottom" constant="8" symbolic="YES" id="rVz-tN-Vzi"/>
-                            <constraint firstItem="pyI-NO-kWQ" firstAttribute="leading" secondItem="QkR-r2-AEv" secondAttribute="leading" id="rim-gZ-a5r"/>
-                            <constraint firstItem="QkR-r2-AEv" firstAttribute="leading" secondItem="v1T-3p-9zy" secondAttribute="leading" id="rrL-FC-mJs"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o8g-CW-cWZ">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="MI6-71-3q0">
@@ -614,14 +582,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awN-Zu-CnU">
-                                <rect key="frame" x="239" y="151" width="65" height="35"/>
-                                <fontDescription key="fontDescription" name="JCkg" family="GungSeo" pointSize="18"/>
-                                <state key="normal" title="GUESS!">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -892,18 +852,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onw-Yk-5Hq">
-                                <rect key="frame" x="139" y="184" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6da-Uv-f80">
-                                <rect key="frame" x="139" y="425" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -913,8 +861,6 @@
                         <outlet property="buttonB" destination="jZR-sf-p20" id="jRx-wE-Due"/>
                         <outlet property="buttonC" destination="IoS-uH-zY6" id="P0h-pE-myf"/>
                         <outlet property="buttonD" destination="c6Z-F8-C3D" id="dR0-fD-987"/>
-                        <outlet property="questionLabel" destination="Onw-Yk-5Hq" id="pkJ-Ba-3mf"/>
-                        <outlet property="resultLabel" destination="6da-Uv-f80" id="CGh-g8-iq6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7I-aO-22W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -941,13 +887,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Leodicaprio.png" width="376" height="225"/>
         <image name="camera" width="27" height="34"/>
-        <image name="katy_perry_roar.png" width="376" height="223"/>
-        <image name="michael_jordan.png" width="376" height="223"/>
         <image name="shuffle" width="33" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6UU-Hx-THj"/>
+        <segue reference="PnW-Ba-NXo"/>
     </inferredMetricsTieBreakers>
 </document>

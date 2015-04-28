@@ -78,8 +78,9 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        dismissViewControllerAnimated(false, completion: nil)
-        tabBarController?.selectedIndex = 0
+//        dismissViewControllerAnimated(false, completion: nil)
+self.navigationController?.popViewControllerAnimated(true)
+    
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -121,6 +122,7 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
     
     func cancel() {
         reset()
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func send() {
@@ -147,7 +149,7 @@ class CameraTableViewController: UITableViewController, UIImagePickerControllerD
         videoFilePath = nil
         recipients?.removeAllObjects()
         picked = false
-        tabBarController?.selectedIndex = 0
+        
     }
     
     func uploadMessage() {
