@@ -24,6 +24,8 @@
 		3D47150B1AD8810B00907711 /* MailComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D47150A1AD8810B00907711 /* MailComposerViewController.swift */; };
 		3D5624681AB0EF2000897D85 /* CharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5624671AB0EF2000897D85 /* CharadeViewController.swift */; };
 		3D5EA5F01AB7C16400A069E8 /* CharadeVC.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EA5EF1AB7C16400A069E8 /* CharadeVC.png */; };
+		3DCE40631AF14FDD00E2CC8B /* PrettyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE40621AF14FDD00E2CC8B /* PrettyButton.swift */; };
+		3DCE40651AF1565600E2CC8B /* Arrow + Mailboxes.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCE40641AF1565600E2CC8B /* Arrow + Mailboxes.png */; };
 		3DD763FE1AB9004800D1081F /* WatchCharadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD763FD1AB9004800D1081F /* WatchCharadeViewController.swift */; };
 		3DD764001AB9066B00D1081F /* green check.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD763FF1AB9066B00D1081F /* green check.png */; };
 		3DD764021AB9070800D1081F /* whitecheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD764011AB9070800D1081F /* whitecheck.png */; };
@@ -86,6 +88,8 @@
 		3D47150A1AD8810B00907711 /* MailComposerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailComposerViewController.swift; sourceTree = "<group>"; };
 		3D5624671AB0EF2000897D85 /* CharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharadeViewController.swift; sourceTree = "<group>"; };
 		3D5EA5EF1AB7C16400A069E8 /* CharadeVC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharadeVC.png; sourceTree = "<group>"; };
+		3DCE40621AF14FDD00E2CC8B /* PrettyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyButton.swift; sourceTree = "<group>"; };
+		3DCE40641AF1565600E2CC8B /* Arrow + Mailboxes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow + Mailboxes.png"; sourceTree = "<group>"; };
 		3DD763FD1AB9004800D1081F /* WatchCharadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchCharadeViewController.swift; sourceTree = "<group>"; };
 		3DD763FF1AB9066B00D1081F /* green check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green check.png"; sourceTree = "<group>"; };
 		3DD764011AB9070800D1081F /* whitecheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitecheck.png; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 		3D39190A1AB35DD200A51EA2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3DCE40641AF1565600E2CC8B /* Arrow + Mailboxes.png */,
 				3DD763FF1AB9066B00D1081F /* green check.png */,
 				3D39190C1AB35DD200A51EA2 /* 1362367588524-2013-03-03 22.18.13.png */,
 				3D0D203B1AB8B1F8007EEBD4 /* katy_perry_roar.png */,
@@ -234,6 +239,7 @@
 				3DE89AA01A7A9447001A55D3 /* Info.plist */,
 				3D0D20351AB89B11007EEBD4 /* Gungseouche.ttf */,
 				3DE89AE21A7A9B35001A55D3 /* Mime-Bridging-Header.h */,
+				3DCE40621AF14FDD00E2CC8B /* PrettyButton.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			files = (
 				3D0D20361AB89CA7007EEBD4 /* Gungseouche.ttf in Resources */,
 				3DD764001AB9066B00D1081F /* green check.png in Resources */,
+				3DCE40651AF1565600E2CC8B /* Arrow + Mailboxes.png in Resources */,
 				3DE89AA71A7A9447001A55D3 /* Main.storyboard in Resources */,
 				3D39191D1AB35DD200A51EA2 /* 1424904946495-2015-02-20 13.26.54.png in Resources */,
 				3DD764021AB9070800D1081F /* whitecheck.png in Resources */,
@@ -413,6 +420,7 @@
 				3DF32C531AAF5EB50024899F /* MenuViewController.swift in Sources */,
 				3D01FD981A8FEC9D009D6E4B /* RegisterViewController.swift in Sources */,
 				3D3919271AB4D8DD00A51EA2 /* HomeTableViewController.swift in Sources */,
+				3DCE40631AF14FDD00E2CC8B /* PrettyButton.swift in Sources */,
 				3DF32C551AAF69FC0024899F /* FriendsViewController.swift in Sources */,
 				3DE89AA41A7A9447001A55D3 /* ViewController.swift in Sources */,
 				3DE89AA21A7A9447001A55D3 /* AppDelegate.swift in Sources */,

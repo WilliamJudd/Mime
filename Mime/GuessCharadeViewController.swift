@@ -24,7 +24,9 @@ class GuessCharadeViewController: UIViewController {
 
 
     var questionNumber: UInt32!
-    
+   
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -74,7 +76,10 @@ class GuessCharadeViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
-        
+//        self.navigationController?.navigationBarHidden = true
+
+
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,8 +98,9 @@ class GuessCharadeViewController: UIViewController {
         
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
 
-            navigationController?.popToRootViewControllerAnimated(true)
+            self.navigationController?.popToRootViewControllerAnimated(true)
 
+                
             })
         
         myAlert.addAction(okAction)

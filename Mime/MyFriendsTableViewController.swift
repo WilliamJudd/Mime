@@ -21,6 +21,7 @@ class MyFriendsTableViewController: UITableViewController, UITableViewDelegate, 
         let editButton = UIBarButtonItem(title: "Edit", style: UIBarButtonItemStyle.Plain, target: self, action: "edit")
         navigationItem.rightBarButtonItem = editButton
         
+        
 //        tableView = UITableView(frame: view.bounds, style: UITableViewStyle.Plain)
 //        tableView?.delegate = self
 //        tableView?.dataSource = self
@@ -42,6 +43,9 @@ class MyFriendsTableViewController: UITableViewController, UITableViewDelegate, 
             }
         })
     }
+    
+  
+
     
     func edit() {
         var editVC = EditFriendsTableViewController()
