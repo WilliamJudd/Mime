@@ -34,16 +34,16 @@ class RegisterViewController: UIViewController {
         if(username.isEmpty || userEmail.isEmpty || userPassword.isEmpty || userRepeatPassword.isEmpty)
 
         {
-            displayMyAlertMessage("All fields are required")
-            return
+            displayMyAlertMessage("All fields are required");
+            return;
         }
         
         if(userPassword != userRepeatPassword)
 
         {
 
-        displayMyAlertMessage("Passwords to not match")
-        return
+            displayMyAlertMessage("Passwords to not match");
+            return;
             
         }else{
    
@@ -63,15 +63,18 @@ class RegisterViewController: UIViewController {
                 self.emailTextfield.text = ""
                 
                 // Hooray! Let them use the app now.
+
                 
-                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as!
-                MenuViewController
+                    self.dismissViewControllerAnimated(true, completion: nil)
                 
-                self.navigationController?.pushViewController(menuVC, animated: true)
+//                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as!
+//                MenuViewController
+//                
+//                self.navigationController?.presentViewController(menuVC, animated: true, completion: nil)
                 
             } else {
                
-                self.displayMyAlertMessage("All Fields Are required")
+                self.displayMyAlertMessage("Please Try Again")
             }
         }
         

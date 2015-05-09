@@ -32,18 +32,18 @@ class LogInViewController: UIViewController {
     
         PFUser.logInWithUsernameInBackground(usernameTextfield.text, password:passwordTextfield.text) {
             (user: PFUser!, error: NSError!) -> Void in
+            
             if user != nil {
                 
                 println("logged in as \(user)")
                 
-                var menuVC = self.storyboard?.instantiateViewControllerWithIdentifier("menuVC") as!
-                MenuViewController
-                
-                
-                self.navigationController?.pushViewController(menuVC, animated: true)
+            self.dismissViewControllerAnimated(true, completion: nil)
                 
                 
                 // Do stuff after successful login.
+            }else{
+                self.displayMyAlertMessage("Please Try Again")
+
             }
                 // The login failed. Check error to see why.
             
